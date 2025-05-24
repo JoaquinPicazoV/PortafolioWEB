@@ -11,34 +11,114 @@ function PROJECTS() {
     },
     {
       image: ReactIcon,
-      title: "Sistema Estacionamiento (Mobile)",
-      subtitle: "Aplicación móvil para realizar y gestionar reservas de estacionamiento.",
-      languages: [{ name: "flutter", logo: ReactIcon }, { name: "dart", logo: ReactIcon }]
+      title: 'Juego memorice "Spaceduo" (mobile)',
+      subtitle: "[TENGO QUE HACER MINI DESCR.]",
+      languages: [{ name: "React", logo: ReactIcon }, { name: "dart", logo: ReactIcon }]
     },
     {
       image: ReactIcon,
-      title: "Sistema Estacionamiento (Mobile)",
-      subtitle: "Aplicación móvil para realizar y gestionar reservas de estacionamiento.",
-      languages: [{ name: "flutter", logo: ReactIcon }, { name: "dart", logo: ReactIcon }]
+      title: 'Juego memorice "Logo Match Game" (web)',
+      subtitle: "[TENGO QUE HACER MINI DESCR.]",
+      languages: [{ name: "React", logo: ReactIcon }, { name: "dart", logo: ReactIcon }]
     },
     {
       image: ReactIcon,
-      title: "Sistema Estacionamiento (Mobile)",
-      subtitle: "Aplicación móvil para realizar y gestionar reservas de estacionamiento.",
-      languages: [{ name: "flutter", logo: ReactIcon }, { name: "dart", logo: ReactIcon }]
+      title: "Portafolio",
+      subtitle: "Portafolio web desplegado con Vercel.",
+      languages: [{ name: "React", logo: ReactIcon }, { name: "dart", logo: ReactIcon }]
     },
     {
       image: ReactIcon,
-      title: "Sistema Estacionamiento (Mobile)",
-      subtitle: "Aplicación móvil para realizar y gestionar reservas de estacionamiento.",
-      languages: [{ name: "flutter", logo: ReactIcon }, { name: "dart", logo: ReactIcon }]
+      title: "Calculadora de IMC",
+      subtitle: "[TENGO QUE HACER MINI DESCR.]",
+      languages: [{ name: "HTML", logo: ReactIcon }, { name: "CSS", logo: ReactIcon }, { name: "Javascript", logo: ReactIcon }]
     },
     {
       image: ReactIcon,
-      title: "Sistema Estacionamiento (Mobile)",
-      subtitle: "Aplicación móvil para realizar y gestionar reservas de estacionamiento.",
-      languages: [{ name: "flutter", logo: ReactIcon }, { name: "dart", logo: ReactIcon }]
+      title: "Apuntes de introducción a Javascript",
+      subtitle: "Hago apuntes con los fundamentos de Javascript.",
+      languages: [{ name: "Javascript", logo: ReactIcon }]
     },
+    {
+      image: ReactIcon,
+      title: "Calculadora (básico)",
+      subtitle: "[TENGO QUE HACER MINI DESCR.]",
+      languages: [{ name: "HTML", logo: ReactIcon }, { name: "CSS", logo: ReactIcon }, { name: "Javascript", logo: ReactIcon }]
+    },
+    {
+      image: ReactIcon,
+      title: "Teclado interactivo (básico)",
+      subtitle: "[TENGO QUE HACER MINI DESCR.]",
+      languages: [{ name: "HTML", logo: ReactIcon }, { name: "CSS", logo: ReactIcon }, { name: "Javascript", logo: ReactIcon }]
+    },
+    {
+      image: ReactIcon,
+      title: "Sidebar (básico)",
+      subtitle: "[TENGO QUE HACER MINI DESCR.]",
+      languages: [{ name: "HTML", logo: ReactIcon }, { name: "CSS", logo: ReactIcon }, { name: "Javascript", logo: ReactIcon }]
+    },
+    {
+      image: ReactIcon,
+      title: "Botón (básico)",
+      subtitle: "[TENGO QUE HACER MINI DESCR.]",
+      languages: [{ name: "HTML", logo: ReactIcon }, { name: "CSS", logo: ReactIcon }, { name: "Javascript", logo: ReactIcon }]
+    },
+    {
+      image: ReactIcon,
+      title: "ToggleSwitch (básico)",
+      subtitle: "[TENGO QUE HACER MINI DESCR.]",
+      languages: [{ name: "HTML", logo: ReactIcon }, { name: "CSS", logo: ReactIcon }, { name: "Javascript", logo: ReactIcon }]
+    },
+    {
+      image: ReactIcon,
+      title: "Web comida rápida (básico)",
+      subtitle: "[TENGO QUE HACER MINI DESCR.]",
+      languages: [{ name: "HTML", logo: ReactIcon }, { name: "CSS", logo: ReactIcon }, { name: "Javascript", logo: ReactIcon }]
+    },
+    {
+      image: ReactIcon,
+      title: "Web producto (básico)",
+      subtitle: "[TENGO QUE HACER MINI DESCR.]",
+      languages: [{ name: "HTML", logo: ReactIcon }, { name: "CSS", logo: ReactIcon }, { name: "Javascript", logo: ReactIcon }]
+    },
+    {
+      image: ReactIcon,
+      title: "Background (básico)",
+      subtitle: "[TENGO QUE HACER MINI DESCR.]",
+      languages: [{ name: "HTML", logo: ReactIcon }, { name: "CSS", logo: ReactIcon }, { name: "Javascript", logo: ReactIcon }]
+    },
+    {
+      image: ReactIcon,
+      title: "Videos (básico)",
+      subtitle: "[TENGO QUE HACER MINI DESCR.]",
+      languages: [{ name: "HTML", logo: ReactIcon }, { name: "CSS", logo: ReactIcon }, { name: "Javascript", logo: ReactIcon }]
+    },
+    {
+      image: ReactIcon,
+      title: "Web de carga (básico)",
+      subtitle: "[TENGO QUE HACER MINI DESCR.]",
+      languages: [{ name: "HTML", logo: ReactIcon }, { name: "CSS", logo: ReactIcon }, { name: "Javascript", logo: ReactIcon }]
+    },
+    {
+      image: ReactIcon,
+      title: "Simulador básico de transacciones bancarias",
+      subtitle: "[TENGO QUE HACER MINI DESCR.]",
+      languages: [{ name: "Javascript", logo: ReactIcon }]
+    },
+    {
+      image: ReactIcon,
+      title: "Simulador básico de inventario de biblioteca",
+      subtitle: "[TENGO QUE HACER MINI DESCR.]",
+      languages: [{ name: "Javascript", logo: ReactIcon }]
+    },
+    {
+      image: ReactIcon,
+      title: "Simulador básico de interacción en RR.SS",
+      subtitle: "[TENGO QUE HACER MINI DESCR.]",
+      languages: [{ name: "Javascript", logo: ReactIcon }]
+    },
+    
+
   ];
 
   return (
@@ -56,7 +136,7 @@ function PROJECTS() {
                 <p className="text-gray-600 mt-2 text-sm">{project.subtitle}</p>
                 <div className="mt-4 flex">
                   {project.languages.map((language, i) => (
-                    <div key={i} className="flex items-center border border-red-500 rounded-4xl pl-2 pr-2">
+                    <div key={i} className="flex items-center rounded-4xl pl-2 pr-2">
                       <img src={language.logo} className="h-5 object-contain mr-1" />
                       <p>{language.name}</p>
                     </div>

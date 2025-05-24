@@ -1,7 +1,7 @@
 import { React } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope, faDownload } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faDownload, faUserSecret } from '@fortawesome/free-solid-svg-icons';
 
 function CONTACT() {
     return (
@@ -28,6 +28,12 @@ function CONTACT() {
                     <p className="text-black font-bold">/DIRECCION_WEB</p>
                     <p className="text-[rgba(123,138,156,1)] mb-4">Explorar repositorio</p>
                     <button className="shadow border border-gray-300 bg-gray-100 p-2 rounded w-full">Ver GitHub</button>
+                </div>
+                <div className="shadow text-left border border-blue-200 p-4 rounded justify-center w-[300px]">
+                    <h1 className="text-black font-bold mb-4 text-xl"><FontAwesomeIcon icon={faUserSecret} className='h-[20px] text-[rgba(4,105,161,1)]'/> Try Hack Me</h1>
+                    <p className="text-black font-bold">/DIRECCION_WEB</p>
+                    <p className="text-[rgba(123,138,156,1)] mb-4">Explorar perfil</p>
+                    <button className="shadow border border-gray-300 bg-gray-100 p-2 rounded w-full">Visitar perfil</button>
                 </div>
             </div>
             <div className="text-center justify-center items-center">

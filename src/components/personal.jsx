@@ -4,7 +4,7 @@ function PERSONALINFORMATION() {
 
     return (
         <div className="w-full grid bg-white p-5 md:flex">
-            <div className="grid justify-center items-center md:w-1/2">
+            <div className="grid justify-center items-center md:w-1/2 lg:ml-50">
                 <div className='flex'>
                     <h1 className="bg-blue-100 p-1 text-[rgba(4,105,161,1)] font-bold inline-block">Sobre mí</h1>
                 </div>
