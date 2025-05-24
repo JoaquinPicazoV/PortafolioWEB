@@ -20,7 +20,7 @@ function INTRODUCTION() {
           me motiva el aprendizaje continuo y la exploración de nuevos conocimientos.</p>
         <p className="text-[rgba(123,138,156,1)] mb-5">Aprovecho cada oportunidad para fortalecer mis habilidades en ciberseguridad, complementando mi formación 
           académica con cursos gratuitos de CISCO, material educativo en YouTube, y diversas plataformas especializadas. He completado el curso "Junior Penetration Tester" 
-          en Try Hack Me y tengo el objetivo de realizar el de "Red Teaming" en el futuro. En mis tiempos libres, practico principalmente vulnerando máquinas en Try Hack Me, 
+          en TryHackMe y tengo el objetivo de realizar el de "Red Teaming" en el futuro. En mis tiempos libres, practico principalmente vulnerando máquinas en Try Hack Me, 
           además de explorar plataformas como Hack The Box y Dockerlabs, que me han permitido desarrollar un enfoque práctico y autodidacta en el área.</p>
         <p className="text-[rgba(123,138,156,1)] mb-5">Mi meta es seguir perfeccionándome en redes y ciberseguridad ofensiva cada vez que tenga la oportunidad, adquiriendo
           experiencia y conocimientos que me permitan aportar significativamente. Estoy comprometido con el aprendizaje continuo y listo para enfrentar nuevos desafíos.</p>

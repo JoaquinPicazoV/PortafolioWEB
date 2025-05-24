@@ -11,6 +11,12 @@ function PROJECTS() {
     },
     {
       image: ReactIcon,
+      title: 'Simulador de postulaciones con PAES',
+      subtitle: "[TENGO QUE HACER MINI DESCR.]",
+      languages: [{ name: "React", logo: ReactIcon }, { name: "Tailwindcss", logo: ReactIcon }]
+    },
+    {
+      image: ReactIcon,
       title: 'Juego memorice "Spaceduo" (mobile)',
       subtitle: "[TENGO QUE HACER MINI DESCR.]",
       languages: [{ name: "React", logo: ReactIcon }, { name: "dart", logo: ReactIcon }]
@@ -25,11 +31,17 @@ function PROJECTS() {
       image: ReactIcon,
       title: "Portafolio",
       subtitle: "Portafolio web desplegado con Vercel.",
-      languages: [{ name: "React", logo: ReactIcon }, { name: "dart", logo: ReactIcon }]
+      languages: [{ name: "React", logo: ReactIcon }, { name: "Tailwindcss", logo: ReactIcon }]
     },
     {
       image: ReactIcon,
       title: "Calculadora de IMC",
+      subtitle: "[TENGO QUE HACER MINI DESCR.]",
+      languages: [{ name: "HTML", logo: ReactIcon }, { name: "CSS", logo: ReactIcon }, { name: "Javascript", logo: ReactIcon }]
+    },
+    {
+      image: ReactIcon,
+      title: "Generador de contraseñas",
       subtitle: "[TENGO QUE HACER MINI DESCR.]",
       languages: [{ name: "HTML", logo: ReactIcon }, { name: "CSS", logo: ReactIcon }, { name: "Javascript", logo: ReactIcon }]
     },
@@ -41,61 +53,61 @@ function PROJECTS() {
     },
     {
       image: ReactIcon,
-      title: "Calculadora (básico)",
+      title: "Calculadora",
       subtitle: "[TENGO QUE HACER MINI DESCR.]",
       languages: [{ name: "HTML", logo: ReactIcon }, { name: "CSS", logo: ReactIcon }, { name: "Javascript", logo: ReactIcon }]
     },
     {
       image: ReactIcon,
-      title: "Teclado interactivo (básico)",
+      title: "Teclado interactivo",
       subtitle: "[TENGO QUE HACER MINI DESCR.]",
       languages: [{ name: "HTML", logo: ReactIcon }, { name: "CSS", logo: ReactIcon }, { name: "Javascript", logo: ReactIcon }]
     },
     {
       image: ReactIcon,
-      title: "Sidebar (básico)",
+      title: "Sidebar",
       subtitle: "[TENGO QUE HACER MINI DESCR.]",
       languages: [{ name: "HTML", logo: ReactIcon }, { name: "CSS", logo: ReactIcon }, { name: "Javascript", logo: ReactIcon }]
     },
     {
       image: ReactIcon,
-      title: "Botón (básico)",
+      title: "Botón",
       subtitle: "[TENGO QUE HACER MINI DESCR.]",
       languages: [{ name: "HTML", logo: ReactIcon }, { name: "CSS", logo: ReactIcon }, { name: "Javascript", logo: ReactIcon }]
     },
     {
       image: ReactIcon,
-      title: "ToggleSwitch (básico)",
+      title: "ToggleSwitch",
       subtitle: "[TENGO QUE HACER MINI DESCR.]",
       languages: [{ name: "HTML", logo: ReactIcon }, { name: "CSS", logo: ReactIcon }, { name: "Javascript", logo: ReactIcon }]
     },
     {
       image: ReactIcon,
-      title: "Web comida rápida (básico)",
+      title: "Web comida rápida",
       subtitle: "[TENGO QUE HACER MINI DESCR.]",
       languages: [{ name: "HTML", logo: ReactIcon }, { name: "CSS", logo: ReactIcon }, { name: "Javascript", logo: ReactIcon }]
     },
     {
       image: ReactIcon,
-      title: "Web producto (básico)",
+      title: "Web producto",
       subtitle: "[TENGO QUE HACER MINI DESCR.]",
       languages: [{ name: "HTML", logo: ReactIcon }, { name: "CSS", logo: ReactIcon }, { name: "Javascript", logo: ReactIcon }]
     },
     {
       image: ReactIcon,
-      title: "Background (básico)",
+      title: "Background",
       subtitle: "[TENGO QUE HACER MINI DESCR.]",
       languages: [{ name: "HTML", logo: ReactIcon }, { name: "CSS", logo: ReactIcon }, { name: "Javascript", logo: ReactIcon }]
     },
     {
       image: ReactIcon,
-      title: "Videos (básico)",
+      title: "Videos",
       subtitle: "[TENGO QUE HACER MINI DESCR.]",
       languages: [{ name: "HTML", logo: ReactIcon }, { name: "CSS", logo: ReactIcon }, { name: "Javascript", logo: ReactIcon }]
     },
     {
       image: ReactIcon,
-      title: "Web de carga (básico)",
+      title: "Web de carga",
       subtitle: "[TENGO QUE HACER MINI DESCR.]",
       languages: [{ name: "HTML", logo: ReactIcon }, { name: "CSS", logo: ReactIcon }, { name: "Javascript", logo: ReactIcon }]
     },
@@ -125,7 +137,7 @@ function PROJECTS() {
     <div className="w-full flex justify-center items-center py-8">
       <div className="w-full md:w-2/3">
         <div className="flex justify-center items-center mb-4">
-          <h1 className="bg-blue-100 p-1 text-[rgba(4,105,161,1)] font-bold inline-block">Proyectos</h1>
+          <h1 className="bg-blue-100 p-1 text-[rgba(4,105,161,1)] font-bold inline-block">Proyectos - Desarrollo</h1>
         </div>
         <div className="w-full overflow-x-auto flex gap-4 p-4">
           <div className="flex gap-4 justify-start ">

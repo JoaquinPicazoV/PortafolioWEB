@@ -24,7 +24,7 @@ function EDUCATION() {
                         <h3 className="font-bold">Junior Penetration Tester</h3>
                         <div className="flex items-center">
                             <p className="mr-5 bg-blue-100 p-1 text-[rgba(4,105,161,1)] font-bold text-base rounded">2025</p>
-                            <p className="text-[rgba(123,138,156,1)]">Try Hack Me</p>
+                            <p className="text-[rgba(123,138,156,1)]">TryHackMe</p>
                         </div>
                         <p className="text-[rgba(123,138,156,1)] mb-4">Habilidades esenciales para un Pentester Junior.</p>
                     </div>

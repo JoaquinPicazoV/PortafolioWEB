@@ -14,6 +14,7 @@ import HYDRA from '../assets/hydra.png';
 import METASPLOIT from '../assets/metasploit.png';
 import PYTHON from '../assets/python.png';
 import JOHN from '../assets/john.png';
+import PACKET from '../assets/packet.png';
 
 import BASH from '../assets/bash.png';
 import BURPSUITE from '../assets/burpsuite.png';
@@ -39,6 +40,7 @@ function SKILLS() {
         { nombre: "Metasploit", url: METASPLOIT },
         { nombre: "Python", url: PYTHON },
         { nombre: "John The Ripper", url: JOHN },
+        { nombre: "Packet Tracer", url: PACKET },
     ];
     const learning = [
         { nombre: "Bash", url: BASH },
