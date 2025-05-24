@@ -12,7 +12,7 @@ function App() {
     <div className="w-full h-full">
    
         <INTRODUCTION/>
-        <PERSONALINFORMATION/>
+   
         <SKILLS/>
         <PROJECTS/>
         <EDUCATION/>

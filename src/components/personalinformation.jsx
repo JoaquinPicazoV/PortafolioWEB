@@ -8,7 +8,7 @@ function PERSONALINFORMATION() {
                 <div className='flex'>
                     <h1 className="bg-blue-100 p-1 text-[rgba(4,105,161,1)] font-bold inline-block">Sobre mí</h1>
                 </div>
-                <p className="text-[rgba(123,138,156,1)] mb-5"> aLorem ipsum dolor sit amet consectetur adipisicing elit. Sit perferendis ab adipisci in illum numquam nam, neque nulla,
+                <p className="text-[rgba(123,138,156,1)] mb-5"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit perferendis ab adipisci in illum numquam nam, neque nulla,
                     veritatis id ad iusto quos, dolorum quaerat repellat recusandae fugiat iure officia. Lorem ipsum dolor sit, amet consectetur
                     adipisicing elit. Veniam magnam sequi dignissimos magni numquam placeat sint perspiciatis natus blanditiis vitae, doloribus,
                     atque nobis. Tempora est fugit sit in, minus veritatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, nulla.
