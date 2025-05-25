@@ -18,11 +18,11 @@ function INTRODUCTION() {
         <p className="text-[rgba(123,138,156,1)] mb-5">Mi nombre es Joaquín Picazo y soy estudiante de quinto año de Ingeniería Civil en Informática en la 
           Universidad de Los Lagos. En lo personal me gusta el mundo de las redes y la ciberseguridad, aunque aún estoy consolidando mis conocimientos en los fundamentos, 
           me motiva el aprendizaje continuo y la exploración de nuevos conocimientos.</p>
-        <p className="text-[rgba(123,138,156,1)] mb-5">Aprovecho cada oportunidad para fortalecer mis habilidades en ciberseguridad, complementando mi formación 
+        <p className="text-[rgba(123,138,156,1)] mb-5">Cada vez que puedo intento fortalecer mis habilidades en ciberseguridad, complementando mi formación 
           académica con cursos gratuitos de CISCO, material educativo en YouTube, y diversas plataformas especializadas. He completado el curso "Junior Penetration Tester" 
-          en TryHackMe y tengo el objetivo de realizar el de "Red Teaming" en el futuro. En mis tiempos libres, practico principalmente vulnerando máquinas en Try Hack Me, 
+          en TryHackMe y tengo el objetivo de realizar el de "Red Teaming" en el futuro. En mis tiempos libres, practico principalmente vulnerando máquinas en TryHackMe, 
           además de explorar plataformas como Hack The Box y Dockerlabs, que me han permitido desarrollar un enfoque práctico y autodidacta en el área.</p>
-        <p className="text-[rgba(123,138,156,1)] mb-5">Mi meta es seguir perfeccionándome en redes y ciberseguridad ofensiva cada vez que tenga la oportunidad, adquiriendo
+        <p className="text-[rgba(123,138,156,1)] mb-5">Mi meta es seguir perfeccionándome en redes y ciberseguridad ofensiva, adquiriendo
           experiencia y conocimientos que me permitan aportar significativamente. Estoy comprometido con el aprendizaje continuo y listo para enfrentar nuevos desafíos.</p>
         <div className='flex'>
           <button className="shadow bg-[rgba(4,105,161,1)] text-white p-4 rounded-full mr-8"><FontAwesomeIcon className="mr-4" icon={faDownload}/>Descargar CV</button>

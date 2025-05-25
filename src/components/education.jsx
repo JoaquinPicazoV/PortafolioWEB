@@ -9,7 +9,7 @@ function EDUCATION() {
 
             <div className="grid md:flex md:justify-between gap-6 md:gap-12 justify-center items-start w-full px-6">
                 <div className="border border-blue-200 bg-white text-left p-5 shadow rounded w-full md:w-1/2">
-                    <h1 className="font-bold text-xl">Ingeniería Civil Informática</h1>
+                    <h1 className="font-bold text-xl">Ingeniería Civil en Informática</h1>
                     <p className="text-[rgba(123,138,156,1)] mb-4">Universidad de Los Lagos</p>
                     <div className="flex items-center">
                         <p className="mr-5 bg-blue-100 p-1 text-[rgba(4,105,161,1)] font-bold text-base rounded">2021 - Presente</p>

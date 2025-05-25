@@ -1,27 +1,45 @@
 import React from 'react';
-import IconoReact from '../assets/react.svg';
+import IconoReact from '../assets/logos/react.svg';
 import MRROBOT from '../assets/machines/mrrobot.jpeg';
 import COLDDBOX from '../assets/machines/colddbox.png';
 import BASICPENTESTING from '../assets/machines/basicpentesting.png';
 import BOLT from '../assets/machines/bolt.png';
+import VULN from '../assets/machines/vulnversity.png';
+import PICKLE from '../assets/machines/picklerick.jpeg';
+import TAKEOVER from '../assets/machines/takeover.png';
+import STARTUP from '../assets/machines/startup.png';
+import CHOCOLATE from '../assets/machines/chocolatefactory.jpeg';
+import CHILLHACK from '../assets/machines/chillhack.png';
+import EASYPEASY from '../assets/machines/easypeasy.png';
+import BLOG from '../assets/machines/blog.png';
+import CORRIDOR from '../assets/machines/corridor.png';
+import IGNITE from '../assets/machines/ignite.png';
+import BLUE from '../assets/machines/blue.gif';
+import ROOTME from '../assets/machines/rootme.png';
+import ICE from '../assets/machines/ice.png';
+import BLASTER from '../assets/machines/blaster.png';
+import DOCKERLABSDEFAULT from '../assets/machines/dockerlabsdefault.png';
+import TPROOT from '../assets/machines/tproot.webp';
 
-function CYBERPROJECTS() {
+
+
+function WRITEUPS() {
   const proyectos = [
-    {
-      imagen: MRROBOT,
-      titulo: 'Máquina "Mr Robot CTF"',
-      dificultad: "Media",
-      plataforma: "TryHackMe",
-      sistemaOperativo: "Linux",
-      pdf: "/pdf/archivo.pdf"
-    },
+    // {
+    //   imagen: MRROBOT,
+    //   titulo: 'Máquina "Mr Robot CTF"',
+    //   dificultad: "Media",
+    //   plataforma: "TryHackMe",
+    //   sistemaOperativo: "Linux",
+    //   pdf: "/writeups/THM/.pdf"
+    // },
     {
       imagen: COLDDBOX,
       titulo: 'Máquina "Colddbox: Easy"',
       dificultad: "Fácil",
       plataforma: "TryHackMe",
       sistemaOperativo: "Linux",
-      pdf: "/pdf/archivo.pdf"
+      pdf: "/writeups/THM/ColddBox_Easy.pdf"
     },
     {
       imagen: BASICPENTESTING,
@@ -29,207 +47,207 @@ function CYBERPROJECTS() {
       dificultad: "Fácil",
       plataforma: "TryHackMe",
       sistemaOperativo: "Linux",
-      pdf: "/pdf/archivo.pdf"
+      pdf: "/writeups/THM/Basic_Pentesting.pdf"
     },
+    // {
+    //   imagen: BOLT,
+    //   titulo: 'Máquina "Bolt"',
+    //   dificultad: "Fácil",
+    //   plataforma: "TryHackMe",
+    //   sistemaOperativo: "Linux",
+    //   pdf: "/writeups/THM/.pdf"
+    // },
     {
-      imagen: BOLT,
-      titulo: 'Máquina "Bolt"',
-      dificultad: "Fácil",
-      plataforma: "TryHackMe",
-      sistemaOperativo: "Linux",
-      pdf: "/pdf/archivo.pdf"
-    },
-    {
-      imagen: IconoReact,
+      imagen: VULN,
       titulo: 'Máquina "Vulnversity"',
       dificultad: "Fácil",
       plataforma: "TryHackMe",
       sistemaOperativo: "Linux",
-      pdf: "/pdf/archivo.pdf"
+      pdf: "/writeups/THM/Vulnversity.pdf"
     },
     {
-      imagen: IconoReact,
+      imagen: PICKLE,
       titulo: 'Máquina "Pickle Rick"',
       dificultad: "Fácil",
       plataforma: "TryHackMe",
       sistemaOperativo: "Linux",
-      pdf: "/pdf/archivo.pdf"
+      pdf: "/writeups/THM/Pickle_Rick.pdf"
     },
     {
-      imagen: IconoReact,
+      imagen: TAKEOVER,
       titulo: 'Máquina "TakeOver"',
       dificultad: "Fácil",
       plataforma: "TryHackMe",
       sistemaOperativo: "Linux",
-      pdf: "/pdf/archivo.pdf"
+      pdf: "/writeups/THM/TakeOver.pdf"
     },
     {
-      imagen: IconoReact,
+      imagen: STARTUP,
       titulo: 'Máquina "Startup"',
       dificultad: "Fácil",
       plataforma: "TryHackMe",
       sistemaOperativo: "Linux",
-      pdf: "/pdf/archivo.pdf"
+      pdf: "/writeups/THM/Startup.pdf"
     },
     {
-      imagen: IconoReact,
+      imagen: CHOCOLATE,
       titulo: 'Máquina "Chocolate Factory"',
       dificultad: "Fácil",
       plataforma: "TryHackMe",
       sistemaOperativo: "Linux",
-      pdf: "/pdf/archivo.pdf"
+      pdf: "/writeups/THM/Chocolate_Factory.pdf"
     },
     {
-      imagen: IconoReact,
+      imagen: CHILLHACK,
       titulo: 'Máquina "Chill hack"',
       dificultad: "Fácil",
       plataforma: "TryHackMe",
       sistemaOperativo: "Linux",
-      pdf: "/pdf/archivo.pdf"
+      pdf: "/writeups/THM/Chill_Hack.pdf"
     },
     {
-      imagen: IconoReact,
+      imagen: EASYPEASY,
       titulo: 'Máquina "Easy Peasy"',
       dificultad: "Fácil",
       plataforma: "TryHackMe",
       sistemaOperativo: "Linux",
-      pdf: "/pdf/archivo.pdf"
+      pdf: "/writeups/THM/Easy_Peasy.pdf"
     },
+    // {
+    //   imagen: BLOG,
+    //   titulo: 'Máquina "Blog"',
+    //   dificultad: "Fácil",
+    //   plataforma: "TryHackMe",
+    //   sistemaOperativo: "Linux",
+    //   pdf: "/writeups/THM/.pdf"
+    // },
+    // {
+    //   imagen: CORRIDOR,
+    //   titulo: 'Máquina "Corridor"',
+    //   dificultad: "Fácil",
+    //   plataforma: "TryHackMe",
+    //   sistemaOperativo: "Linux",
+    //   pdf: "/writeups/THM/.pdf"
+    // },
     {
-      imagen: IconoReact,
-      titulo: 'Máquina "Blog"',
-      dificultad: "Fácil",
-      plataforma: "TryHackMe",
-      sistemaOperativo: "Linux",
-      pdf: "/pdf/archivo.pdf"
-    },
-    {
-      imagen: IconoReact,
-      titulo: 'Máquina "Corridor"',
-      dificultad: "Fácil",
-      plataforma: "TryHackMe",
-      sistemaOperativo: "Linux",
-      pdf: "/pdf/archivo.pdf"
-    },
-    {
-      imagen: IconoReact,
+      imagen: IGNITE,
       titulo: 'Máquina "Ignite"',
       dificultad: "Fácil",
       plataforma: "TryHackMe",
       sistemaOperativo: "Linux",
-      pdf: "/pdf/archivo.pdf"
+      pdf: "/writeups/THM/Ignite.pdf"
     },
     {
-      imagen: IconoReact,
+      imagen: BLUE,
       titulo: 'Máquina "Blue"',
       dificultad: "Fácil",
       plataforma: "TryHackMe",
       sistemaOperativo: "Windows",
-      pdf: "/pdf/archivo.pdf"
+      pdf: "/writeups/THM/Blue.pdf"
     },
     {
-      imagen: IconoReact,
-      titulo: 'Máquina "Root Me"',
+      imagen: ROOTME,
+      titulo: 'Máquina "RootMe"',
       dificultad: "Fácil",
       plataforma: "TryHackMe",
       sistemaOperativo: "Linux",
-      pdf: "/pdf/archivo.pdf"
+      pdf: "/writeups/THM/Root_Me.pdf"
     },
     {
-      imagen: IconoReact,
+      imagen: ICE,
       titulo: 'Máquina "Ice"',
       dificultad: "Fácil",
       plataforma: "TryHackMe",
       sistemaOperativo: "Windows",
-      pdf: "/pdf/archivo.pdf"
+      pdf: "/writeups/THM/ICE.pdf"
     },
+    // {
+    //   imagen: BLASTER,
+    //   titulo: 'Máquina "Blaster"',
+    //   dificultad: "Fácil",
+    //   plataforma: "TryHackMe",
+    //   sistemaOperativo: "Windows",
+    //   pdf: "/writeups/THM/.pdf"
+    // },
     {
-      imagen: IconoReact,
-      titulo: 'Máquina "Blaster"',
-      dificultad: "Fácil",
-      plataforma: "TryHackMe",
-      sistemaOperativo: "Windows",
-      pdf: "/pdf/archivo.pdf"
-    },
-    {
-      imagen: IconoReact,
+      imagen: DOCKERLABSDEFAULT,
       titulo: 'Máquina "Psycho"',
       dificultad: "Fácil",
       plataforma: "Dockerlabs",
       sistemaOperativo: "Linux",
-      pdf: "/pdf/archivo.pdf"
+      pdf: "/writeups/Dockerlabs/Psycho.pdf"
     },
+    // {
+    //   imagen: DOCKERLABSDEFAULT,
+    //   titulo: 'Máquina "Injection"',
+    //   dificultad: "Muy fácil",
+    //   plataforma: "Dockerlabs",
+    //   sistemaOperativo: "Linux",
+    //   pdf: "/writeups/Dockerlabs/.pdf"
+    // },
     {
-      imagen: IconoReact,
-      titulo: 'Máquina "Injection"',
-      dificultad: "Muy fácil",
-      plataforma: "Dockerlabs",
-      sistemaOperativo: "Linux",
-      pdf: "/pdf/archivo.pdf"
-    },
-    {
-      imagen: IconoReact,
+      imagen: DOCKERLABSDEFAULT,
       titulo: 'Máquina "BorazuwarahCTF"',
       dificultad: "Muy fácil",
       plataforma: "Dockerlabs",
       sistemaOperativo: "Linux",
-      pdf: "/pdf/archivo.pdf"
+      pdf: "/writeups/Dockerlabs/BorazuwarahCTF.pdf"
     },
     {
-      imagen: IconoReact,
+      imagen: DOCKERLABSDEFAULT,
       titulo: 'Máquina "BreakMySSH"',
       dificultad: "Muy fácil",
       plataforma: "Dockerlabs",
       sistemaOperativo: "Linux",
-      pdf: "/pdf/archivo.pdf"
+      pdf: "/writeups/Dockerlabs/BreakMySSH.pdf"
     },
     {
-      imagen: IconoReact,
+      imagen: DOCKERLABSDEFAULT,
       titulo: 'Máquina "FirstHacking"',
       dificultad: "Muy fácil",
       plataforma: "Dockerlabs",
       sistemaOperativo: "Linux",
-      pdf: "/pdf/archivo.pdf"
+      pdf: "/writeups/Dockerlabs/FirstHacking.pdf"
     },
     {
-      imagen: IconoReact,
+      imagen: DOCKERLABSDEFAULT,
       titulo: 'Máquina "Obsession"',
       dificultad: "Muy fácil",
       plataforma: "Dockerlabs",
       sistemaOperativo: "Linux",
-      pdf: "/pdf/archivo.pdf"
+      pdf: "/writeups/Dockerlabs/Obsession.pdf"
     },
     {
-      imagen: IconoReact,
+      imagen: DOCKERLABSDEFAULT,
       titulo: 'Máquina "Trust"',
       dificultad: "Muy fácil",
       plataforma: "Dockerlabs",
       sistemaOperativo: "Linux",
-      pdf: "/pdf/archivo.pdf"
+      pdf: "/writeups/Dockerlabs/Trust.pdf"
     },
     {
-      imagen: IconoReact,
+      imagen: DOCKERLABSDEFAULT,
       titulo: 'Máquina "Vacaciones"',
       dificultad: "Muy fácil",
       plataforma: "Dockerlabs",
       sistemaOperativo: "Linux",
-      pdf: "/pdf/archivo.pdf"
+      pdf: "/writeups/Dockerlabs/Vacaciones.pdf"
     },
     {
-      imagen: IconoReact,
+      imagen: TPROOT,
       titulo: 'Máquina "Tproot"',
       dificultad: "Muy fácil",
       plataforma: "Dockerlabs",
       sistemaOperativo: "Linux",
-      pdf: "/pdf/archivo.pdf"
+      pdf: "/writeups/Dockerlabs/Tproot.pdf"
     },
     {
-      imagen: IconoReact,
+      imagen: DOCKERLABSDEFAULT,
       titulo: 'Máquina "HedgeHog"',
       dificultad: "Muy fácil",
       plataforma: "Dockerlabs",
       sistemaOperativo: "Linux",
-      pdf: "/pdf/archivo.pdf"
+      pdf: "/writeups/Dockerlabs/HedgeHog.pdf"
     },
     
 
@@ -239,7 +257,7 @@ function CYBERPROJECTS() {
     <div className="w-full flex justify-center items-center py-8">
       <div className="w-full md:w-2/3">
         <div className="flex justify-center items-center mb-4">
-          <h1 className="bg-blue-100 p-1 text-[rgba(4,105,161,1)] font-bold inline-block">Proyectos - Redes y Ciberseguridad</h1>
+          <h1 className="bg-blue-100 p-1 text-[rgba(4,105,161,1)] font-bold inline-block">Mis writeups - Pentesting</h1>
         </div>
         <div className="w-full overflow-x-auto flex gap-4 p-4">
           <div className="flex gap-4 justify-start">
@@ -268,4 +286,4 @@ function CYBERPROJECTS() {
   );
 }
 
-export default CYBERPROJECTS;
+export default WRITEUPS;

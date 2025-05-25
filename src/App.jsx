@@ -3,7 +3,8 @@ import EDUCATION from './components/education';
 import FOOTER from './components/footer';
 import INTRODUCTION from './components/introduction';
 import PERSONALINFORMATION from './components/personal';
-import CYBERPROJECTS from './components/networksandcybersecurity';
+import NETANDCYB from './components/netandcyb';
+import WRITEUPS from './components/writeups';
 import PROJECTS from './components/projects';
 import SKILLS from './components/skills';
 
@@ -15,7 +16,8 @@ function App() {
         <INTRODUCTION/>
         <PERSONALINFORMATION/>
         <SKILLS/>
-        <CYBERPROJECTS/>
+        <NETANDCYB/>
+        <WRITEUPS/>
         <PROJECTS/>
         <EDUCATION/>
         <CONTACT/>

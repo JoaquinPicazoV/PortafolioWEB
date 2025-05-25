@@ -1,26 +1,27 @@
 import { React, useState } from 'react';
 
-import HTML from '../assets/html.png';
-import CSS from '../assets/css.png';
-import JS from '../assets/js.png';
-import GITHUB from '../assets/github.png';
-import NODE from '../assets/node.png';
-import POSTGRESQL from '../assets/postgresql.png';
+import HTML from '../assets/logos/html.png';
+import CSS from '../assets/logos/css.png';
+import JS from '../assets/logos/js.png';
+import GITHUB from '../assets/logos/github.png';
+import NODE from '../assets/logos/node.png';
+import POSTGRESQL from '../assets/logos/postgresql.png';
+import TAILWINDCSS from '../assets/logos/tailwindcss.png';
 
-import JAVA from '../assets/java.png';
-import C from '../assets/c.png';
-import NMAP from '../assets/nmap.png';
-import HYDRA from '../assets/hydra.png';
-import METASPLOIT from '../assets/metasploit.png';
-import PYTHON from '../assets/python.png';
-import JOHN from '../assets/john.png';
-import PACKET from '../assets/packet.png';
+import JAVA from '../assets/logos/java.png';
+import C from '../assets/logos/c.png';
+import NMAP from '../assets/logos/nmap.png';
+import HYDRA from '../assets/logos/hydra.png';
+import METASPLOIT from '../assets/logos/metasploit.png';
+import PYTHON from '../assets/logos/python.png';
+import JOHN from '../assets/logos/john.png';
+import PACKET from '../assets/logos/packet.png';
 
-import BASH from '../assets/bash.png';
-import BURPSUITE from '../assets/burpsuite.png';
-import WIRESHARK from '../assets/wireshark.png';
-import SQLMAP from '../assets/sqlmap.png';
-import ReactIcon from '../assets/react.svg';
+import BASH from '../assets/logos/bash.png';
+import BURPSUITE from '../assets/logos/burpsuite.png';
+import WIRESHARK from '../assets/logos/wireshark.png';
+import SQLMAP from '../assets/logos/sqlmap.png';
+import ReactIcon from '../assets/logos/react.svg';
 
 
 function SKILLS() {
@@ -30,7 +31,8 @@ function SKILLS() {
         { nombre: "Javascript", url: JS },
         { nombre: "GitHub", url: GITHUB },
         { nombre: "Node.js", url: NODE },
-        { nombre: "PostgreSQL (SQL)", url: POSTGRESQL }
+        { nombre: "PostgreSQL", url: POSTGRESQL },
+        { nombre: "Tailwindcss", url: TAILWINDCSS }
     ];
     const known = [
         { nombre: "Java", url: JAVA },
@@ -78,19 +80,19 @@ function SKILLS() {
                 <div className="flex justify-center items-center mb-6 bg-gray-100 p-1">
                     <div className="w-full flex space-x-4 justify-between items-center">
                         <button
-                            className="bg-white p-2 rounded shadow-md w-full"
+                            className={`p-2 rounded shadow-md w-full ${selectedCategory === 'dominated' ? 'bg-blue-500 text-white' : 'bg-white text-black'}`}
                             onClick={() => handleCategoryChange('dominated')}
                         >
                             Dominados
                         </button>
                         <button
-                            className="bg-white p-2 rounded shadow-md w-full"
+                            className={`p-2 rounded shadow-md w-full ${selectedCategory === 'known' ? 'bg-blue-500 text-white' : 'bg-white text-black'}`}
                             onClick={() => handleCategoryChange('known')}
                         >
                             Conocidos
                         </button>
                         <button
-                            className="bg-white p-2 rounded shadow-md w-full"
+                            className={`p-2 rounded shadow-md w-full ${selectedCategory === 'learning' ? 'bg-blue-500 text-white' : 'bg-white text-black'}`}
                             onClick={() => handleCategoryChange('learning')}
                         >
                             Aprendiendo
@@ -98,10 +100,11 @@ function SKILLS() {
                     </div>
                 </div>
 
+
                 <div className="grid grid-cols-3 gap-4 md:grid-cols-6 xl:grid-cols-7 2xl:grid-cols-8 justify-center items-center w-full">
                     {getImages().map((image, index) => (
                         <div key={index} className="grid justify-center items-center shadow-md bg-[rgba(241,244,249,1)] p-2 rounded h-[110px] w-[100px]">
-                            <img src={image.url} alt={image.nombre} className="h-10 w-full object-contain"/>
+                            <img src={image.url} alt={image.nombre} className="h-10 w-full object-contain" />
                             <p className="text-center mt-2 w-full">{image.nombre}</p>
                         </div>
                     ))}
