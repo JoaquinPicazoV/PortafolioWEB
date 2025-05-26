@@ -14,7 +14,7 @@ import SQLMAP from '../assets/logos/sqlmap.png';
 import MAS from '../assets/logos/mas.png';
 import KALI from '../assets/logos/kali.png';
 import ReactIcon from '../assets/logos/react.svg';
-import PDF from '../assets/logos/pdf.png';
+import PDF from '../assets/logos/PDF.png';
 
 function NETANDCYB() {
   const projects = [
