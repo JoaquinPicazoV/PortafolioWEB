@@ -257,12 +257,12 @@ function WRITEUPS() {
     <div className="w-full flex justify-center items-center py-8">
       <div className="w-full md:w-2/3">
         <div className="flex justify-center items-center mb-4">
-          <h1 className="bg-blue-100 p-1 text-[rgba(4,105,161,1)] font-bold inline-block">Mis writeups - Pentesting</h1>
+          <h1 className="bg-red-100 p-1 text-[#d32a2a] font-bold inline-block">Mis writeups - Pentesting</h1>
         </div>
         <div className="w-full overflow-x-auto flex gap-4 p-4">
           <div className="flex gap-4 justify-start">
             {proyectos.map((proyecto, indice) => (
-              <div className="bg-white p-6 border border-gray-200 rounded-lg shadow-lg w-[300px]" key={indice}>
+              <div className="bg-white p-6 border border-red-200 rounded-lg shadow-lg w-[300px]" key={indice}>
                 <img src={proyecto.imagen} className="h-24 w-full object-contain mb-2" alt="Vista del proyecto" />
                 <h3 className="text-xl font-bold text-gray-800">{proyecto.titulo}</h3>
                 <p className="text-gray-600 mt-2 text-sm"><strong>Dificultad:</strong> {proyecto.dificultad}</p>
@@ -272,7 +272,7 @@ function WRITEUPS() {
                   <a
                     href={proyecto.pdf}
                     download
-                    className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 text-sm"
+                    className="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 text-sm"
                   >
                     Descargar Write-Up
                   </a>

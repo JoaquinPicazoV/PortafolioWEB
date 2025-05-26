@@ -12,7 +12,7 @@ function FOOTER() {
             <div className="flex justify-between mb-8">
                 <div className="text-left">
                     <div className="font-bold flex" >
-                        <p className="text-[rgba(4,105,161,1)] mr-1">Joaquín</p>
+                        <p className="text-[#d32a2a] mr-1">Joaquín</p>
                         <p className="text-black">Picazo</p>
                     </div>
                     <p className="text-[rgba(123,138,156,1)]">Estudiante de Ingeniería Civil Informática</p>

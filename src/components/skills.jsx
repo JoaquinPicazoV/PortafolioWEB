@@ -74,25 +74,25 @@ function SKILLS() {
     return (
         <div className="w-full justify-center items-center bg-white p-5">
             <div className="flex justify-center items-center mb-4">
-                <h1 className="bg-blue-100 p-1 text-[rgba(4,105,161,1)] font-bold inline-block">Lenguajes y herramientas</h1>
+                <h1 className="bg-red-100 p-1 text-[#d32a2a] font-bold inline-block">Lenguajes y herramientas</h1>
             </div>
             <div className="grid justify-center items-center w-full">
                 <div className="flex justify-center items-center mb-6 bg-gray-100 p-1">
                     <div className="w-full flex space-x-4 justify-between items-center">
                         <button
-                            className={`p-2 rounded shadow-md w-full ${selectedCategory === 'dominated' ? 'bg-blue-500 text-white' : 'bg-white text-black'}`}
+                            className={`p-2 rounded shadow-md w-full ${selectedCategory === 'dominated' ? 'bg-red-500 text-white' : 'bg-white text-black'}`}
                             onClick={() => handleCategoryChange('dominated')}
                         >
                             Dominados
                         </button>
                         <button
-                            className={`p-2 rounded shadow-md w-full ${selectedCategory === 'known' ? 'bg-blue-500 text-white' : 'bg-white text-black'}`}
+                            className={`p-2 rounded shadow-md w-full ${selectedCategory === 'known' ? 'bg-red-500 text-white' : 'bg-white text-black'}`}
                             onClick={() => handleCategoryChange('known')}
                         >
                             Conocidos
                         </button>
                         <button
-                            className={`p-2 rounded shadow-md w-full ${selectedCategory === 'learning' ? 'bg-blue-500 text-white' : 'bg-white text-black'}`}
+                            className={`p-2 rounded shadow-md w-full ${selectedCategory === 'learning' ? 'bg-red-500 text-white' : 'bg-white text-black'}`}
                             onClick={() => handleCategoryChange('learning')}
                         >
                             Aprendiendo

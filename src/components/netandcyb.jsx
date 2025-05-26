@@ -24,7 +24,7 @@ function NETANDCYB() {
     },
     {
       title: "Red Empresarial con Router-on-a-Stick y VLANs",
-      subtitle: "Se implementan múltiples VLANs y un router que enruta entre ellas usando subinterfaces (Router-on-a-Stick). Gateway centralizado. El enrutamiento se puede controlar.",
+      subtitle: "Se implementan múltiples VLANs y un router que enruta entre ellas usando subinterfaces (Router-on-a-Stick). Gateway centralizado.",
       languages: [{ name: "Packet Tracer", logo: PACKET }]
     },
     {
@@ -58,12 +58,12 @@ function NETANDCYB() {
     <div className="w-full flex justify-center items-center py-8">
       <div className="w-full md:w-2/3">
         <div className="flex justify-center items-center mb-4">
-          <h1 className="bg-blue-100 p-1 text-[rgba(4,105,161,1)] font-bold inline-block">Proyectos - Redes y Ciberseguridad</h1>
+          <h1 className="bg-red-100 p-1 text-[#d32a2a] font-bold inline-block">Proyectos - Redes y Ciberseguridad</h1>
         </div>
         <div className="w-full overflow-x-auto flex gap-4 p-4">
           <div className="flex gap-4 justify-start ">
             {projects.map((project, index) => (
-              <div className="bg-white p-6 border border-gray-200 rounded-lg shadow-lg w-[300px]" key={index}>
+              <div className="bg-white p-6 border border-red-200 rounded-lg shadow-lg w-[300px]" key={index}>
                 <h3 className="text-xl font-bold text-gray-800">{project.title}</h3>
                 <p className="text-gray-600 mt-2 text-sm">{project.subtitle}</p>
                 <div className="mt-4 flex flex-wrap gap-2">
