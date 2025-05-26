@@ -11,6 +11,8 @@ import BASH from '../assets/logos/bash.png';
 import BURPSUITE from '../assets/logos/burpsuite.png';
 import WIRESHARK from '../assets/logos/wireshark.png';
 import SQLMAP from '../assets/logos/sqlmap.png';
+import MAS from '../assets/logos/mas.png';
+import KALI from '../assets/logos/kali.png';
 import ReactIcon from '../assets/logos/react.svg';
 
 function NETANDCYB() {
@@ -18,7 +20,7 @@ function NETANDCYB() {
     {
       title: "Writeups máquinas vulneradas",
       subtitle: "Realizo mis writeups a medida que voy vulnerando máquinas en entornos controlados.",
-      languages: [{ name: "Kali Linux", logo: WIRESHARK },{ name: "Nmap", logo: NMAP },{ name: "Hydra", logo: HYDRA },{ name: "Metasploit", logo: METASPLOIT },{ name: "John", logo: JOHN },{ name: "Otras herramientas", logo: PACKET }]
+      languages: [{ name: "Kali Linux", logo: KALI },{ name: "Nmap", logo: NMAP },{ name: "Hydra", logo: HYDRA },{ name: "Metasploit", logo: METASPLOIT },{ name: "John", logo: JOHN },{ name: "Otras herramientas", logo: MAS }]
     },
     {
       title: "Red Empresarial con Router-on-a-Stick y VLANs",
