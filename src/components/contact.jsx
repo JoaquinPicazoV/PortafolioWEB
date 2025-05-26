@@ -30,11 +30,6 @@ function CONTACT() {
                     <button className="shadow border border-gray-300 bg-gray-100 p-2 rounded w-full">Ver GitHub</button>
                 </div>
             </div>
-            <div className="text-center justify-center items-center">
-                <p className="mb-4 font-bold">¿Interés en trabajar juntos?</p>
-                <button className="shadow bg-[rgba(4,105,161,1)] text-white p-4 rounded-full"><FontAwesomeIcon className="mr-4" icon={faDownload}/>Descargar CV</button>
-            </div>
-
         </div>
     );
 }

@@ -24,9 +24,6 @@ function INTRODUCTION() {
           además de explorar plataformas como Hack The Box y Dockerlabs, que me han permitido desarrollar un enfoque práctico y autodidacta en el área.</p>
         <p className="text-[rgba(123,138,156,1)] mb-5">Mi meta es seguir perfeccionándome en redes y ciberseguridad ofensiva, adquiriendo
           experiencia y conocimientos que me permitan aportar significativamente. Estoy comprometido con el aprendizaje continuo y listo para enfrentar nuevos desafíos.</p>
-        <div className='flex'>
-          <button className="shadow bg-[rgba(4,105,161,1)] text-white p-4 rounded-full mr-8"><FontAwesomeIcon className="mr-4" icon={faDownload}/>Descargar CV</button>
-        </div>
       </div>
 
     </div>
