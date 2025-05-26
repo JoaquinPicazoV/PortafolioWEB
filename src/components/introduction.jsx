@@ -9,7 +9,7 @@ function INTRODUCTION() {
     <div className="w-full grid bg-gradient-to-r from-white to-red-200 md:flex p-5">
       <div className="flex justify-center items-center md:w-1/2">
         <div className="flex justify-center text-center items-center border border-red-500 rounded-full mb-8">
-          <img src="" alt="Imagen" class="flex w-80 h-80 rounded-full"></img>
+          <img src="../src/assets/user.png" alt="Imagen" class="flex w-80 h-80 rounded-full"></img>
         </div>
       </div>
       <div className="md:w-1/2">

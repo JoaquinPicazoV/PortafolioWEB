@@ -14,6 +14,7 @@ import SQLMAP from '../assets/logos/sqlmap.png';
 import MAS from '../assets/logos/mas.png';
 import KALI from '../assets/logos/kali.png';
 import ReactIcon from '../assets/logos/react.svg';
+import PDF from '../assets/logos/pdf.png';
 
 function NETANDCYB() {
   const projects = [
@@ -36,6 +37,11 @@ function NETANDCYB() {
       title: "VLAN básica",
       subtitle: "Segmentación de red mediante VLANs para aislar tráfico entre departamentos, reduciendo riesgos de acceso no autorizado y ataques laterales.",
       languages: [{ name: "Packet Tracer", logo: PACKET }]
+    },
+    {
+      title: "Guía rápida de Nmap - Reconocimiento en entornos de red",
+      subtitle: "Cheat sheet con los comandos y parámetros de Nmap. Ideal para acelerar y documentar la fase de escaneo en entornos controlados. Cada comando/parámetro es situacional.",
+      languages: [{ name: "PDF", logo: PDF }]
     },
     {
       title: "LAN con servidor DHCP",
