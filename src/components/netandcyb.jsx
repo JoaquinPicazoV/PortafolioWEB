@@ -1,10 +1,32 @@
 import { React } from 'react';
 import PACKET from '../assets/logos/packet.png';
+import JAVA from '../assets/logos/java.png';
+import C from '../assets/logos/c.png';
+import NMAP from '../assets/logos/nmap.png';
+import HYDRA from '../assets/logos/hydra.png';
+import METASPLOIT from '../assets/logos/metasploit.png';
+import PYTHON from '../assets/logos/python.png';
+import JOHN from '../assets/logos/john.png';
+import BASH from '../assets/logos/bash.png';
+import BURPSUITE from '../assets/logos/burpsuite.png';
+import WIRESHARK from '../assets/logos/wireshark.png';
+import SQLMAP from '../assets/logos/sqlmap.png';
+import ReactIcon from '../assets/logos/react.svg';
 
 function NETANDCYB() {
   const projects = [
     {
-      title: "Configuración de Switch con Seguridad Básica",
+      title: "Writeups máquinas vulneradas",
+      subtitle: "Realizo mis writeups a medida que voy vulnerando máquinas en entornos controlados.",
+      languages: [{ name: "Kali Linux", logo: WIRESHARK },{ name: "Nmap", logo: NMAP },{ name: "Hydra", logo: HYDRA },{ name: "Metasploit", logo: METASPLOIT },{ name: "John", logo: JOHN },{ name: "Otras herramientas", logo: PACKET }]
+    },
+    {
+      title: "Red Empresarial con Router-on-a-Stick y VLANs",
+      subtitle: "Se implementan múltiples VLANs y un router que enruta entre ellas usando subinterfaces (Router-on-a-Stick). Gateway centralizado. El enrutamiento se puede controlar.",
+      languages: [{ name: "Packet Tracer", logo: PACKET }]
+    },
+    {
+      title: "Configuración de Switch con seguridad básica",
       subtitle: "Configuración de VLANs y seguridad en puertos para limitar conexiones físicas y proteger la red contra dispositivos no autorizados y ataques en capa 2.",
       languages: [{ name: "Packet Tracer", logo: PACKET }]
     },
