@@ -18,14 +18,14 @@ import ROOTME from '../assets/machines/rootme.png';
 import ICE from '../assets/machines/ice.png';
 import BLASTER from '../assets/machines/blaster.png';
 
-import DOCKERLABSDEFAULT from '../assets/machines/Dockerlabs/dockerlabsdefault.png';
-import TPROOT from '../assets/machines/Dockerlabs/tproot.webp';
-import BALULERO from '../assets/machines/Dockerlabs/balulero.jpg';
-import JENKHACK from '../assets/machines/Dockerlabs/jenkhack.jpg';
-import PRESSENTER from '../assets/machines/Dockerlabs/pressenter.png';
-import STELLARJWT from '../assets/machines/Dockerlabs/Stellarjwt.jpg';
-import VERDEJO from '../assets/machines/Dockerlabs/verdejo.jpg';
-import VULNVAULT from '../assets/machines/Dockerlabs/vulnvault.jpg';
+import DOCKERLABSDEFAULT from '../assets/machines/DockerLabs/dockerlabsdefault.png';
+import TPROOT from '../assets/machines/DockerLabs/tproot.webp';
+import BALULERO from '../assets/machines/DockerLabs/balulero.jpg';
+import JENKHACK from '../assets/machines/DockerLabs/jenkhack.jpg';
+import PRESSENTER from '../assets/machines/DockerLabs/pressenter.png';
+import STELLARJWT from '../assets/machines/DockerLabs/Stellarjwt.jpg';
+import VERDEJO from '../assets/machines/DockerLabs/verdejo.jpg';
+import VULNVAULT from '../assets/machines/DockerLabs/vulnvault.jpg';
 
 
 
