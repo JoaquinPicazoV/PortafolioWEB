@@ -12,27 +12,73 @@ import CHOCOLATE from '../assets/machines/chocolatefactory.jpeg';
 import CHILLHACK from '../assets/machines/chillhack.png';
 import EASYPEASY from '../assets/machines/easypeasy.png';
 import BLOG from '../assets/machines/blog.png';
-import CORRIDOR from '../assets/machines/corridor.png';
 import IGNITE from '../assets/machines/ignite.png';
 import BLUE from '../assets/machines/blue.gif';
 import ROOTME from '../assets/machines/rootme.png';
 import ICE from '../assets/machines/ice.png';
 import BLASTER from '../assets/machines/blaster.png';
-import DOCKERLABSDEFAULT from '../assets/machines/dockerlabsdefault.png';
-import TPROOT from '../assets/machines/tproot.webp';
+
+import DOCKERLABSDEFAULT from '../assets/machines/Dockerlabs/dockerlabsdefault.png';
+import TPROOT from '../assets/machines/Dockerlabs/tproot.webp';
+import BALULERO from '../assets/machines/Dockerlabs/balulero.jpg';
+import JENKHACK from '../assets/machines/Dockerlabs/jenkhack.jpg';
+import PRESSENTER from '../assets/machines/Dockerlabs/pressenter.png';
+import STELLARJWT from '../assets/machines/Dockerlabs/Stellarjwt.jpg';
+import VERDEJO from '../assets/machines/Dockerlabs/verdejo.jpg';
+import VULNVAULT from '../assets/machines/Dockerlabs/vulnvault.jpg';
 
 
 
 function WRITEUPS() {
   const proyectos = [
-    // {
-    //   imagen: MRROBOT,
-    //   titulo: 'Máquina "Mr Robot CTF"',
-    //   dificultad: "Media",
-    //   plataforma: "TryHackMe",
-    //   sistemaOperativo: "Linux",
-    //   pdf: "/writeups/THM/.pdf"
-    // },
+    {
+      imagen: MRROBOT,
+      titulo: 'Máquina "Mr Robot CTF"',
+      dificultad: "Media",
+      plataforma: "TryHackMe",
+      sistemaOperativo: "Linux",
+      pdf: "/writeups/THM/Mr Robot CTF.pdf"
+    },
+    {
+      imagen: BLOG,
+      titulo: 'Máquina "Blog"',
+      dificultad: "Media",
+      plataforma: "TryHackMe",
+      sistemaOperativo: "Linux",
+      pdf: "/writeups/THM/Blog.pdf"
+    },
+    {
+      imagen: STELLARJWT,
+      titulo: 'Máquina "Stellarjwt"',
+      dificultad: "Fácil",
+      plataforma: "DockerLabs",
+      sistemaOperativo: "Linux",
+      pdf: "/writeups/Dockerlabs/Stellarjwt.pdf"
+    },
+    {
+      imagen: DOCKERLABSDEFAULT,
+      titulo: 'Máquina "Domain"',
+      dificultad: "Media",
+      plataforma: "DockerLabs",
+      sistemaOperativo: "Linux",
+      pdf: "/writeups/Dockerlabs/Domain.pdf"
+    }, 
+    {
+      imagen: DOCKERLABSDEFAULT,
+      titulo: 'Máquina "ChocolateFire"',
+      dificultad: "Media",
+      plataforma: "DockerLabs",
+      sistemaOperativo: "Linux",
+      pdf: "/writeups/Dockerlabs/ChocolateFire.pdf"
+    },
+    {
+      imagen: BLUE,
+      titulo: 'Máquina "Blue"',
+      dificultad: "Fácil",
+      plataforma: "TryHackMe",
+      sistemaOperativo: "Windows",
+      pdf: "/writeups/THM/Blue.pdf"
+    },
     {
       imagen: COLDDBOX,
       titulo: 'Máquina "Colddbox: Easy"',
@@ -49,14 +95,14 @@ function WRITEUPS() {
       sistemaOperativo: "Linux",
       pdf: "/writeups/THM/Basic_Pentesting.pdf"
     },
-    // {
-    //   imagen: BOLT,
-    //   titulo: 'Máquina "Bolt"',
-    //   dificultad: "Fácil",
-    //   plataforma: "TryHackMe",
-    //   sistemaOperativo: "Linux",
-    //   pdf: "/writeups/THM/.pdf"
-    // },
+    {
+      imagen: BOLT,
+      titulo: 'Máquina "Bolt"',
+      dificultad: "Fácil",
+      plataforma: "TryHackMe",
+      sistemaOperativo: "Linux",
+      pdf: "/writeups/THM/Bolt.pdf"
+    },
     {
       imagen: VULN,
       titulo: 'Máquina "Vulnversity"',
@@ -80,6 +126,14 @@ function WRITEUPS() {
       plataforma: "TryHackMe",
       sistemaOperativo: "Linux",
       pdf: "/writeups/THM/TakeOver.pdf"
+    },
+    {
+      imagen: ICE,
+      titulo: 'Máquina "Ice"',
+      dificultad: "Fácil",
+      plataforma: "TryHackMe",
+      sistemaOperativo: "Windows",
+      pdf: "/writeups/THM/ICE.pdf"
     },
     {
       imagen: STARTUP,
@@ -113,22 +167,7 @@ function WRITEUPS() {
       sistemaOperativo: "Linux",
       pdf: "/writeups/THM/Easy_Peasy.pdf"
     },
-    // {
-    //   imagen: BLOG,
-    //   titulo: 'Máquina "Blog"',
-    //   dificultad: "Fácil",
-    //   plataforma: "TryHackMe",
-    //   sistemaOperativo: "Linux",
-    //   pdf: "/writeups/THM/.pdf"
-    // },
-    // {
-    //   imagen: CORRIDOR,
-    //   titulo: 'Máquina "Corridor"',
-    //   dificultad: "Fácil",
-    //   plataforma: "TryHackMe",
-    //   sistemaOperativo: "Linux",
-    //   pdf: "/writeups/THM/.pdf"
-    // },
+    
     {
       imagen: IGNITE,
       titulo: 'Máquina "Ignite"',
@@ -137,14 +176,7 @@ function WRITEUPS() {
       sistemaOperativo: "Linux",
       pdf: "/writeups/THM/Ignite.pdf"
     },
-    {
-      imagen: BLUE,
-      titulo: 'Máquina "Blue"',
-      dificultad: "Fácil",
-      plataforma: "TryHackMe",
-      sistemaOperativo: "Windows",
-      pdf: "/writeups/THM/Blue.pdf"
-    },
+    
     {
       imagen: ROOTME,
       titulo: 'Máquina "RootMe"',
@@ -153,43 +185,311 @@ function WRITEUPS() {
       sistemaOperativo: "Linux",
       pdf: "/writeups/THM/Root_Me.pdf"
     },
+    
     {
-      imagen: ICE,
-      titulo: 'Máquina "Ice"',
+      imagen: BLASTER,
+      titulo: 'Máquina "Blaster"',
       dificultad: "Fácil",
       plataforma: "TryHackMe",
       sistemaOperativo: "Windows",
-      pdf: "/writeups/THM/ICE.pdf"
+      pdf: "/writeups/THM/Blaster.pdf"
     },
-    // {
-    //   imagen: BLASTER,
-    //   titulo: 'Máquina "Blaster"',
-    //   dificultad: "Fácil",
-    //   plataforma: "TryHackMe",
-    //   sistemaOperativo: "Windows",
-    //   pdf: "/writeups/THM/.pdf"
-    // },
+    {
+      imagen: VULNVAULT,
+      titulo: 'Máquina "Vulnvault"',
+      dificultad: "Fácil",
+      plataforma: "DockerLabs",
+      sistemaOperativo: "Linux",
+      pdf: "/writeups/Dockerlabs/Vulnvault.pdf"
+    },
+    {
+      imagen: PRESSENTER,
+      titulo: 'Máquina "Pressenter"',
+      dificultad: "Fácil",
+      plataforma: "DockerLabs",
+      sistemaOperativo: "Linux",
+      pdf: "/writeups/Dockerlabs/Pressenter.pdf"
+    },
+    {
+      imagen: JENKHACK,
+      titulo: 'Máquina "JenkHack"',
+      dificultad: "Fácil",
+      plataforma: "DockerLabs",
+      sistemaOperativo: "Linux",
+      pdf: "/writeups/Dockerlabs/JenkHack.pdf"
+    },
+    {
+      imagen: VERDEJO,
+      titulo: 'Máquina "Verdejo"',
+      dificultad: "Fácil",
+      plataforma: "DockerLabs",
+      sistemaOperativo: "Linux",
+      pdf: "/writeups/Dockerlabs/Verdejo.pdf"
+    },
+    {
+      imagen: BALULERO,
+      titulo: 'Máquina "Balulero"',
+      dificultad: "Fácil",
+      plataforma: "DockerLabs",
+      sistemaOperativo: "Linux",
+      pdf: "/writeups/Dockerlabs/Balulero.pdf"
+    },
     {
       imagen: DOCKERLABSDEFAULT,
       titulo: 'Máquina "Psycho"',
       dificultad: "Fácil",
-      plataforma: "Dockerlabs",
+      plataforma: "DockerLabs",
       sistemaOperativo: "Linux",
       pdf: "/writeups/Dockerlabs/Psycho.pdf"
     },
-    // {
-    //   imagen: DOCKERLABSDEFAULT,
-    //   titulo: 'Máquina "Injection"',
-    //   dificultad: "Muy fácil",
-    //   plataforma: "Dockerlabs",
-    //   sistemaOperativo: "Linux",
-    //   pdf: "/writeups/Dockerlabs/.pdf"
-    // },
+    {
+      imagen: DOCKERLABSDEFAULT,
+      titulo: 'Máquina "AguaDeMayo"',
+      dificultad: "Fácil",
+      plataforma: "DockerLabs",
+      sistemaOperativo: "Linux",
+      pdf: "/writeups/Dockerlabs/AguaDeMayo.pdf"
+    },
+    {
+      imagen: DOCKERLABSDEFAULT,
+      titulo: 'Máquina "Amor"',
+      dificultad: "Fácil",
+      plataforma: "DockerLabs",
+      sistemaOperativo: "Linux",
+      pdf: "/writeups/Dockerlabs/Amor.pdf"
+    },
+    {
+      imagen: DOCKERLABSDEFAULT,
+      titulo: 'Máquina "AnonymousPingu"',
+      dificultad: "Fácil",
+      plataforma: "DockerLabs",
+      sistemaOperativo: "Linux",
+      pdf: "/writeups/Dockerlabs/Anonymouspingu.pdf"
+    },
+    {
+      imagen: DOCKERLABSDEFAULT,
+      titulo: 'Máquina "ConsoleLog"',
+      dificultad: "Fácil",
+      plataforma: "DockerLabs",
+      sistemaOperativo: "Linux",
+      pdf: "/writeups/Dockerlabs/ConsoleLog.pdf"
+    },
+    {
+      imagen: DOCKERLABSDEFAULT,
+      titulo: 'Máquina "DockerLabs"',
+      dificultad: "Fácil",
+      plataforma: "DockerLabs",
+      sistemaOperativo: "Linux",
+      pdf: "/writeups/Dockerlabs/Dockerlabs.pdf"
+    },
+    {
+      imagen: DOCKERLABSDEFAULT,
+      titulo: 'Máquina "Escolares"',
+      dificultad: "Fácil",
+      plataforma: "DockerLabs",
+      sistemaOperativo: "Linux",
+      pdf: "/writeups/Dockerlabs/Escolares.pdf"
+    },
+    {
+      imagen: DOCKERLABSDEFAULT,
+      titulo: 'Máquina "Pntopntobarra"',
+      dificultad: "Fácil",
+      plataforma: "DockerLabs",
+      sistemaOperativo: "Linux",
+      pdf: "/writeups/Dockerlabs/Pntopntobarra.pdf"
+    },
+    
+    {
+      imagen: DOCKERLABSDEFAULT,
+      titulo: 'Máquina "NodeClimb"',
+      dificultad: "Fácil",
+      plataforma: "DockerLabs",
+      sistemaOperativo: "Linux",
+      pdf: "/writeups/Dockerlabs/NodeClimb.pdf"
+    },
+    {
+      imagen: DOCKERLABSDEFAULT,
+      titulo: 'Máquina "Picadilly"',
+      dificultad: "Fácil",
+      plataforma: "DockerLabs",
+      sistemaOperativo: "Linux",
+      pdf: "/writeups/Dockerlabs/Picadilly.pdf"
+    },
+    {
+      imagen: DOCKERLABSDEFAULT,
+      titulo: 'Máquina "ShowTime"',
+      dificultad: "Fácil",
+      plataforma: "DockerLabs",
+      sistemaOperativo: "Linux",
+      pdf: "/writeups/Dockerlabs/ShowTime.pdf"
+    },
+    {
+      imagen: DOCKERLABSDEFAULT,
+      titulo: 'Máquina "Upload"',
+      dificultad: "Fácil",
+      plataforma: "DockerLabs",
+      sistemaOperativo: "Linux",
+      pdf: "/writeups/Dockerlabs/Upload.pdf"
+    },
+    
+    {
+      imagen: DOCKERLABSDEFAULT,
+      titulo: 'Máquina "WalkingCMS"',
+      dificultad: "Fácil",
+      plataforma: "DockerLabs",
+      sistemaOperativo: "Linux",
+      pdf: "/writeups/Dockerlabs/WalkingCMS.pdf"
+    },
+    {
+      imagen: DOCKERLABSDEFAULT,
+      titulo: 'Máquina "WhereIsMyWebShell"',
+      dificultad: "Fácil",
+      plataforma: "DockerLabs",
+      sistemaOperativo: "Linux",
+      pdf: "/writeups/Dockerlabs/WhereIsMyWebShell.pdf"
+    },
+    {
+      imagen: DOCKERLABSDEFAULT,
+      titulo: 'Máquina "Whoiam"',
+      dificultad: "Fácil",
+      plataforma: "DockerLabs",
+      sistemaOperativo: "Linux",
+      pdf: "/writeups/Dockerlabs/Whoiam.pdf"
+    },
+    {
+      imagen: DOCKERLABSDEFAULT,
+      titulo: 'Máquina "Winterfell"',
+      dificultad: "Fácil",
+      plataforma: "DockerLabs",
+      sistemaOperativo: "Linux",
+      pdf: "/writeups/Dockerlabs/Winterfell.pdf"
+    },
+    {
+      imagen: DOCKERLABSDEFAULT,
+      titulo: 'Máquina "-Pn"',
+      dificultad: "Fácil",
+      plataforma: "DockerLabs",
+      sistemaOperativo: "Linux",
+      pdf: "/writeups/Dockerlabs/-Pn.pdf"
+    },
+    {
+      imagen: DOCKERLABSDEFAULT,
+      titulo: 'Máquina "Mirame"',
+      dificultad: "Fácil",
+      plataforma: "DockerLabs",
+      sistemaOperativo: "Linux",
+      pdf: "/writeups/Dockerlabs/Mirame.pdf"
+    },
+    {
+      imagen: DOCKERLABSDEFAULT,
+      titulo: 'Máquina "Backend"',
+      dificultad: "Fácil",
+      plataforma: "DockerLabs",
+      sistemaOperativo: "Linux",
+      pdf: "/writeups/Dockerlabs/Backend.pdf"
+    },
+    {
+      imagen: DOCKERLABSDEFAULT,
+      titulo: 'Máquina "Paradise"',
+      dificultad: "Fácil",
+      plataforma: "DockerLabs",
+      sistemaOperativo: "Linux",
+      pdf: "/writeups/Dockerlabs/Paradise.pdf"
+    },
+    
+    {
+      imagen: DOCKERLABSDEFAULT,
+      titulo: 'Máquina "Pequeñas Mentirosas"',
+      dificultad: "Fácil",
+      plataforma: "DockerLabs",
+      sistemaOperativo: "Linux",
+      pdf: "/writeups/Dockerlabs/Pequeñas-Mentirosas.pdf"
+    },
+    {
+      imagen: DOCKERLABSDEFAULT,
+      titulo: 'Máquina "Allien"',
+      dificultad: "Fácil",
+      plataforma: "DockerLabs",
+      sistemaOperativo: "Linux",
+      pdf: "/writeups/Dockerlabs/Allien.pdf"
+    },
+    {
+      imagen: DOCKERLABSDEFAULT,
+      titulo: 'Máquina "FindYourStyle"',
+      dificultad: "Fácil",
+      plataforma: "DockerLabs",
+      sistemaOperativo: "Linux",
+      pdf: "/writeups/Dockerlabs/FindYourStyle.pdf"
+    },
+    {
+      imagen: DOCKERLABSDEFAULT,
+      titulo: 'Máquina "File"',
+      dificultad: "Fácil",
+      plataforma: "DockerLabs",
+      sistemaOperativo: "Linux",
+      pdf: "/writeups/Dockerlabs/File.pdf"
+    },
+    {
+      imagen: DOCKERLABSDEFAULT,
+      titulo: 'Máquina "Elevator"',
+      dificultad: "Fácil",
+      plataforma: "DockerLabs",
+      sistemaOperativo: "Linux",
+      pdf: "/writeups/Dockerlabs/Elevator.pdf"
+    },
+    {
+      imagen: DOCKERLABSDEFAULT,
+      titulo: 'Máquina "Extraviado"',
+      dificultad: "Fácil",
+      plataforma: "DockerLabs",
+      sistemaOperativo: "Linux",
+      pdf: "/writeups/Dockerlabs/Extraviado.pdf"
+    },
+    {
+      imagen: DOCKERLABSDEFAULT,
+      titulo: 'Máquina "Patriaquerida"',
+      dificultad: "Fácil",
+      plataforma: "DockerLabs",
+      sistemaOperativo: "Linux",
+      pdf: "/writeups/Dockerlabs/Patriaquerida.pdf"
+    },
+    {
+      imagen: DOCKERLABSDEFAULT,
+      titulo: 'Máquina "Internship"',
+      dificultad: "Fácil",
+      plataforma: "DockerLabs",
+      sistemaOperativo: "Linux",
+      pdf: "/writeups/Dockerlabs/Internship.pdf"
+    },
+    {
+      imagen: DOCKERLABSDEFAULT,
+      titulo: 'Máquina "Walking Dead"',
+      dificultad: "Fácil",
+      plataforma: "DockerLabs",
+      sistemaOperativo: "Linux",
+      pdf: "/writeups/Dockerlabs/Walking Dead.pdf"
+    },
+    {
+      imagen: TPROOT,
+      titulo: 'Máquina "Tproot"',
+      dificultad: "Muy fácil",
+      plataforma: "DockerLabs",
+      sistemaOperativo: "Linux",
+      pdf: "/writeups/Dockerlabs/Tproot.pdf"
+    },
+    {
+      imagen: DOCKERLABSDEFAULT,
+      titulo: 'Máquina "Injection"',
+      dificultad: "Muy fácil",
+      plataforma: "DockerLabs",
+      sistemaOperativo: "Linux",
+      pdf: "/writeups/Dockerlabs/Injection.pdf"
+    },
     {
       imagen: DOCKERLABSDEFAULT,
       titulo: 'Máquina "BorazuwarahCTF"',
       dificultad: "Muy fácil",
-      plataforma: "Dockerlabs",
+      plataforma: "DockerLabs",
       sistemaOperativo: "Linux",
       pdf: "/writeups/Dockerlabs/BorazuwarahCTF.pdf"
     },
@@ -197,7 +497,7 @@ function WRITEUPS() {
       imagen: DOCKERLABSDEFAULT,
       titulo: 'Máquina "BreakMySSH"',
       dificultad: "Muy fácil",
-      plataforma: "Dockerlabs",
+      plataforma: "DockerLabs",
       sistemaOperativo: "Linux",
       pdf: "/writeups/Dockerlabs/BreakMySSH.pdf"
     },
@@ -205,7 +505,7 @@ function WRITEUPS() {
       imagen: DOCKERLABSDEFAULT,
       titulo: 'Máquina "FirstHacking"',
       dificultad: "Muy fácil",
-      plataforma: "Dockerlabs",
+      plataforma: "DockerLabs",
       sistemaOperativo: "Linux",
       pdf: "/writeups/Dockerlabs/FirstHacking.pdf"
     },
@@ -213,7 +513,7 @@ function WRITEUPS() {
       imagen: DOCKERLABSDEFAULT,
       titulo: 'Máquina "Obsession"',
       dificultad: "Muy fácil",
-      plataforma: "Dockerlabs",
+      plataforma: "DockerLabs",
       sistemaOperativo: "Linux",
       pdf: "/writeups/Dockerlabs/Obsession.pdf"
     },
@@ -221,7 +521,7 @@ function WRITEUPS() {
       imagen: DOCKERLABSDEFAULT,
       titulo: 'Máquina "Trust"',
       dificultad: "Muy fácil",
-      plataforma: "Dockerlabs",
+      plataforma: "DockerLabs",
       sistemaOperativo: "Linux",
       pdf: "/writeups/Dockerlabs/Trust.pdf"
     },
@@ -229,23 +529,16 @@ function WRITEUPS() {
       imagen: DOCKERLABSDEFAULT,
       titulo: 'Máquina "Vacaciones"',
       dificultad: "Muy fácil",
-      plataforma: "Dockerlabs",
+      plataforma: "DockerLabs",
       sistemaOperativo: "Linux",
       pdf: "/writeups/Dockerlabs/Vacaciones.pdf"
     },
-    {
-      imagen: TPROOT,
-      titulo: 'Máquina "Tproot"',
-      dificultad: "Muy fácil",
-      plataforma: "Dockerlabs",
-      sistemaOperativo: "Linux",
-      pdf: "/writeups/Dockerlabs/Tproot.pdf"
-    },
+    
     {
       imagen: DOCKERLABSDEFAULT,
       titulo: 'Máquina "HedgeHog"',
       dificultad: "Muy fácil",
-      plataforma: "Dockerlabs",
+      plataforma: "DockerLabs",
       sistemaOperativo: "Linux",
       pdf: "/writeups/Dockerlabs/HedgeHog.pdf"
     },
@@ -269,11 +562,7 @@ function WRITEUPS() {
                 <p className="text-gray-600 text-sm"><strong>Plataforma:</strong> {proyecto.plataforma}</p>
                 <p className="text-gray-600 text-sm"><strong>Sistema Operativo:</strong> {proyecto.sistemaOperativo}</p>
                 <div className="mt-4">
-                  <a
-                    href={proyecto.pdf}
-                    download
-                    className="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 text-sm"
-                  >
+                  <a href={proyecto.pdf} download className="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 text-sm">
                     Descargar Write-Up
                   </a>
                 </div>

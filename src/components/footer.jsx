@@ -18,9 +18,8 @@ function FOOTER() {
                     <p className="text-[rgba(123,138,156,1)]">Estudiante de Ingeniería Civil Informática</p>
                 </div>
                 <div className="flex gap-2">
-                    <button className="rounded"><FontAwesomeIcon icon={faGithub} size="2x" className='text-black'/></button>
-                    <button className="rounded"><FontAwesomeIcon icon={faLinkedin} size="2x" className='text-black'/></button>
-                    <button className="rounded"><FontAwesomeIcon icon={faEnvelope} size="2x" className='text-black'/></button>
+                    <button className="rounded"><a href="https://github.com/JoaquinPicazoV" target="_blank" rel="noopener noreferrer" className="block"><FontAwesomeIcon icon={faGithub} size="2x" className='text-black'/></a></button>
+                    <button className="rounded"><a href="https://www.linkedin.com/in/joaquín-picazo-velasco-aa4458380" target="_blank" rel="noopener noreferrer" className="block"><FontAwesomeIcon icon={faLinkedin} size="2x" className='text-black'/></a></button>
                 </div>
             </div>           
         </div>

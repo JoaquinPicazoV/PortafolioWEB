@@ -8,7 +8,6 @@ import NODE from '../assets/logos/node.png';
 import POSTGRESQL from '../assets/logos/postgresql.png';
 import TAILWINDCSS from '../assets/logos/tailwindcss.png';
 
-import JAVA from '../assets/logos/java.png';
 import C from '../assets/logos/c.png';
 import NMAP from '../assets/logos/nmap.png';
 import HYDRA from '../assets/logos/hydra.png';
@@ -19,7 +18,6 @@ import PACKET from '../assets/logos/packet.png';
 
 import BASH from '../assets/logos/bash.png';
 import BURPSUITE from '../assets/logos/burpsuite.png';
-import WIRESHARK from '../assets/logos/wireshark.png';
 import SQLMAP from '../assets/logos/sqlmap.png';
 import ReactIcon from '../assets/logos/react.svg';
 
@@ -35,20 +33,18 @@ function SKILLS() {
         { nombre: "Tailwindcss", url: TAILWINDCSS }
     ];
     const known = [
-        { nombre: "Java", url: JAVA },
         { nombre: "C", url: C },
         { nombre: "Nmap", url: NMAP },
         { nombre: "Hydra", url: HYDRA },
         { nombre: "Metasploit", url: METASPLOIT },
         { nombre: "Python", url: PYTHON },
         { nombre: "John The Ripper", url: JOHN },
+        { nombre: "SQLmap", url: SQLMAP },
         { nombre: "Packet Tracer", url: PACKET },
     ];
     const learning = [
         { nombre: "Bash", url: BASH },
         { nombre: "BurpSuite", url: BURPSUITE },
-        { nombre: "Wireshark", url: WIRESHARK },
-        { nombre: "SQLmap", url: SQLMAP },
         { nombre: "React", url: ReactIcon },
     ];
 
@@ -79,27 +75,17 @@ function SKILLS() {
             <div className="grid justify-center items-center w-full">
                 <div className="flex justify-center items-center mb-6 bg-gray-100 p-1">
                     <div className="w-full flex space-x-4 justify-between items-center">
-                        <button
-                            className={`p-2 rounded shadow-md w-full ${selectedCategory === 'dominated' ? 'bg-red-500 text-white' : 'bg-white text-black'}`}
-                            onClick={() => handleCategoryChange('dominated')}
-                        >
+                        <button className={`p-2 rounded shadow-md w-full hover:bg-red-100 cursor-pointer ${selectedCategory === 'dominated' ? 'bg-red-500 text-white' : 'bg-white text-black'}`} onClick={() => handleCategoryChange('dominated')}>
                             Dominados
                         </button>
-                        <button
-                            className={`p-2 rounded shadow-md w-full ${selectedCategory === 'known' ? 'bg-red-500 text-white' : 'bg-white text-black'}`}
-                            onClick={() => handleCategoryChange('known')}
-                        >
+                        <button className={`p-2 rounded shadow-md w-full hover:bg-red-100 cursor-pointer ${selectedCategory === 'known' ? 'bg-red-500 text-white' : 'bg-white text-black'}`} onClick={() => handleCategoryChange('known')}>
                             Conocidos
                         </button>
-                        <button
-                            className={`p-2 rounded shadow-md w-full ${selectedCategory === 'learning' ? 'bg-red-500 text-white' : 'bg-white text-black'}`}
-                            onClick={() => handleCategoryChange('learning')}
-                        >
+                        <button className={`p-2 rounded shadow-md w-full hover:bg-red-100 cursor-pointer ${selectedCategory === 'learning' ? 'bg-red-500 text-white' : 'bg-white text-black'}`} onClick={() => handleCategoryChange('learning')}>
                             Aprendiendo
                         </button>
                     </div>
                 </div>
-
 
                 <div className="grid grid-cols-3 gap-4 md:grid-cols-6 xl:grid-cols-7 2xl:grid-cols-8 justify-center items-center w-full">
                     {getImages().map((image, index) => (

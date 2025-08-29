@@ -15,11 +15,11 @@ function App() {
    
         <INTRODUCTION/>
         <PERSONALINFORMATION/>
+        <EDUCATION/>
         <SKILLS/>
         <NETANDCYB/>
         <WRITEUPS/>
         <PROJECTS/>
-        <EDUCATION/>
         <CONTACT/>
         <FOOTER/>
 
