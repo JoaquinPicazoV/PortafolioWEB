@@ -17,7 +17,7 @@ function PROJECTS() {
     {
       image: ReactIcon,
       title: "Sistema Estacionamiento (Mobile)",
-      subtitle: "Aplicación móvil para realizar y gestionar reservas de estacionamiento.",
+      subtitle: "Formé parte del desarrollo de una aplicación móvil para realizar y gestionar reservas de estacionamiento.",
       languages: [{ name: "Dart", logo: DART }, { name: "Flutter", logo: FLUTTER }, { name: "PostgreSQL", logo: POSTGRESQL }, { name: "Neon", logo: NEON }],
       url: "https://github.com/JoaquinPicazoV/Sistema-Estacionamiento-Mobile.git"
     },

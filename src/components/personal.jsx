@@ -27,7 +27,7 @@ function PERSONALINFORMATION() {
                     <div className="shadow bg-red-100 grid items-center rounded border border-red-200 p-3 md:w-[200px] md:h-[150px]">
                         <h1 className="text-black font-bold">Área</h1>
                         <div>
-                            <p className="text-black text-xl font-bold">Ciberseguridad</p>
+                            <p className="text-black text-xl font-bold break-words">Ciberseguridad</p>
                             <p className="text-[rgba(123,138,156,1)]">Ofensiva</p>
                         </div>
 
@@ -35,7 +35,7 @@ function PERSONALINFORMATION() {
                     <div className="shadow bg-red-100 grid items-center rounded border border-red-200 p-3 md:w-[200px] md:h-[150px]">
                         <h1 className="text-black font-bold">Proyectos</h1>
                         <div>
-                            <p className="text-black text-xl font-bold">5+</p>
+                            <p className="text-black text-xl font-bold break-words">5+</p>
                             <p className="text-[rgba(123,138,156,1)]">Realizados</p>
                         </div>
 
@@ -43,7 +43,7 @@ function PERSONALINFORMATION() {
                     <div className="shadow bg-red-100 grid items-center rounded border border-red-200 p-3 md:w-[200px] md:h-[150px]">
                         <h1 className="text-black font-bold">Máquinas</h1>
                         <div>
-                            <p className="text-black text-xl font-bold">50+</p>
+                            <p className="text-black text-xl font-bold break-words">50+</p>
                             <p className="text-[rgba(123,138,156,1)]">Vulneradas</p>
                         </div>
 
@@ -51,7 +51,7 @@ function PERSONALINFORMATION() {
                     <div className="shadow bg-red-100 grid items-center rounded border border-red-200 p-3 md:w-[200px] md:h-[150px]">
                         <h1 className="text-black font-bold">Educación</h1>
                         <div>
-                            <p className="text-black text-xl font-bold">Estudiando Ing. Civil Informática</p>
+                            <p className="text-black text-xl font-bold break-words">Estudiando Ing. Civil Informática</p>
                             <p className="text-[rgba(123,138,156,1)]">En curso</p>
                         </div>
                     </div>
