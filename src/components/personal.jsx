@@ -25,7 +25,7 @@ function PERSONALINFORMATION() {
             <div className="lg:w-1/2 flex justify-center items-center">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full max-w-lg">
                     <div className="shadow-md bg-red-100 rounded-2xl border border-red-200 p-5 flex flex-col justify-center items-center text-center">
-                        <h2 className="text-gray-800 font-semibold text-lg">Área</h2>
+                        <h2 className="text-gray-800 font-semibold text-lg">Interés</h2>
                         <p className="text-xl font-bold text-black">Ciberseguridad</p>
                         <p className="text-gray-500">Ofensiva</p>
                     </div>
