@@ -70,7 +70,7 @@ function SKILLS() {
     return (
         <div className="w-full justify-center items-center bg-white p-5">
             <div className="flex justify-center items-center mb-4">
-                <h1 className="bg-red-100 p-1 text-[#d32a2a] font-bold inline-block">Lenguajes y herramientas</h1>
+                <h1 className="bg-red-100 p-1 text-[#d32a2a] font-bold inline-block">Lenguajes, herramientas y más</h1>
             </div>
             <div className="grid justify-center items-center w-full">
                 <div className="flex justify-center items-center mb-6 bg-gray-100 p-1">
