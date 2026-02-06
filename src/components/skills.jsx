@@ -68,36 +68,54 @@ function SKILLS() {
     };
 
     return (
-        <div className="w-full justify-center items-center bg-white p-5">
-            <div className="flex justify-center items-center mb-4">
-                <h1 className="bg-red-100 p-1 text-[#d32a2a] font-bold inline-block">Lenguajes, herramientas y más</h1>
+
+        <div className="w-full justify-center items-center bg-slate-900 p-10 relative overflow-hidden">
+
+            <div className="absolute top-1/2 left-1/2 w-[500px] h-[500px] bg-red-500/5 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
+
+            <div className="flex flex-col justify-center items-center mb-10 z-10 relative">
+                <h1 className="text-4xl font-bold text-white mb-2">Habilidades</h1>
+                <div className="h-1 w-20 bg-red-500 rounded-full"></div>
             </div>
-            <div className="grid justify-center items-center w-full">
-                <div className="flex justify-center items-center mb-6 bg-gray-100 p-1">
-                    <div className="w-full flex space-x-4 justify-between items-center">
-                        <button className={`p-2 rounded shadow-md w-full hover:bg-red-100 cursor-pointer ${selectedCategory === 'dominated' ? 'bg-red-500 text-white' : 'bg-white text-black'}`} onClick={() => handleCategoryChange('dominated')}>
+
+            <div className="grid justify-center items-center w-full max-w-6xl mx-auto z-10 relative">
+                <div className="flex justify-center items-center mb-10">
+                    <div className="flex space-x-2 bg-slate-800/50 p-1 rounded-xl backdrop-blur-sm border border-slate-700">
+                        <button
+                            className={`px-6 py-2 rounded-lg font-medium transition-all duration-300 ${selectedCategory === 'dominated' ? 'bg-red-500 text-white shadow-lg shadow-red-500/20' : 'text-slate-400 hover:text-white hover:bg-slate-700'}`}
+                            onClick={() => handleCategoryChange('dominated')}
+                        >
                             Dominados
                         </button>
-                        <button className={`p-2 rounded shadow-md w-full hover:bg-red-100 cursor-pointer ${selectedCategory === 'known' ? 'bg-red-500 text-white' : 'bg-white text-black'}`} onClick={() => handleCategoryChange('known')}>
+                        <button
+                            className={`px-6 py-2 rounded-lg font-medium transition-all duration-300 ${selectedCategory === 'known' ? 'bg-red-500 text-white shadow-lg shadow-red-500/20' : 'text-slate-400 hover:text-white hover:bg-slate-700'}`}
+                            onClick={() => handleCategoryChange('known')}
+                        >
                             Conocidos
                         </button>
-                        <button className={`p-2 rounded shadow-md w-full hover:bg-red-100 cursor-pointer ${selectedCategory === 'learning' ? 'bg-red-500 text-white' : 'bg-white text-black'}`} onClick={() => handleCategoryChange('learning')}>
+                        <button
+                            className={`px-6 py-2 rounded-lg font-medium transition-all duration-300 ${selectedCategory === 'learning' ? 'bg-red-500 text-white shadow-lg shadow-red-500/20' : 'text-slate-400 hover:text-white hover:bg-slate-700'}`}
+                            onClick={() => handleCategoryChange('learning')}
+                        >
                             Aprendiendo
                         </button>
                     </div>
                 </div>
 
-                <div className="grid grid-cols-3 gap-4 md:grid-cols-6 xl:grid-cols-7 2xl:grid-cols-8 justify-center items-center w-full">
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 justify-center items-center w-full">
                     {getImages().map((image, index) => (
-                        <div key={index} className="grid justify-center items-center shadow-md bg-[rgba(241,244,249,1)] p-2 rounded h-[110px] w-[100px]">
-                            <img src={image.url} alt={image.nombre} className="h-10 w-full object-contain" />
-                            <p className="text-center mt-2 w-full">{image.nombre}</p>
+                        <div key={index} className="group flex flex-col justify-center items-center bg-slate-800/50 border border-slate-700 p-4 rounded-xl h-[140px] w-full hover:border-red-500/50 hover:bg-slate-800 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-red-500/10 cursor-default">
+                            <div className="h-16 w-16 flex items-center justify-center p-2 bg-slate-700/30 rounded-full group-hover:scale-110 transition-transform duration-300">
+                                <img src={image.url} alt={image.nombre} className="h-full w-full object-contain" />
+                            </div>
+                            <p className="text-center mt-3 text-slate-300 font-medium group-hover:text-white transition-colors">{image.nombre}</p>
                         </div>
                     ))}
                 </div>
             </div>
         </div>
     );
+
 }
 
 export default SKILLS;

@@ -1,1 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap');
 @import "tailwindcss";
+
+@theme {
+    --font-sans: 'Outfit', sans-serif;
+}
+
+:root {
+    --primary-color: #ef4444;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: #0f172a;
+    color: #f8fafc;
+    overflow-x: hidden;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1e293b;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #475569;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #64748b;
+}

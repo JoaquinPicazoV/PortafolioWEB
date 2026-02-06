@@ -2,79 +2,93 @@ import React from 'react';
 import eJPT from '../assets/certifications/eJPT.png';
 function EDUCATION() {
   return (
-    <div className="grid text-center justify-center items-center mb-5">
-      <div>
-        <h1 className="bg-red-100 p-1 text-[#d32a2a] font-bold inline-block mb-4">Educación</h1>
+    <div className="grid text-center justify-center items-center py-20 bg-slate-900 relative">
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-[20%] left-[10%] w-72 h-72 bg-blue-500/5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-[20%] right-[10%] w-72 h-72 bg-red-500/5 rounded-full blur-3xl"></div>
       </div>
-      <div className="grid md:flex md:justify-between gap-6 md:gap-12 w-full px-6">
 
-        <div className="grid w-full gap-6 p-4 md:w-1/2">
-  <div className="border border-red-200 bg-white text-left p-5 shadow rounded w-full">
-    <h1 className="font-bold text-xl">Ingeniería Civil en Informática</h1>
-    <p className="text-[rgba(123,138,156,1)] mb-4">Universidad de Los Lagos</p>
-    <div className="flex items-center">
-      <p className="mr-5 bg-red-100 p-1 text-[#d32a2a] font-bold text-base rounded">2021 - Presente</p>
-      <p className="text-[rgba(123,138,156,1)]">En curso</p>
-    </div>
-  </div>
+      <div className="relative z-10 mb-12">
+        <h1 className="text-4xl font-bold text-white mb-2">Educación</h1>
+        <div className="h-1 w-20 bg-red-500 rounded-full mx-auto"></div>
+      </div>
 
-  <div className="border border-red-200 bg-white text-left p-5 shadow rounded w-full">
-    <h1 className="font-bold text-xl">Certificaciones</h1>
-    <p className="text-[rgba(123,138,156,1)] mb-4">Certificaciones reconocidas en la industria</p>
+      <div className="grid lg:grid-cols-2 gap-8 w-full max-w-6xl px-6 relative z-10">
 
-    <div className="flex mb-4 gap-4">
-      <img src={eJPT} alt="eJPTv2" className="w-20 h-20 object-contain rounded"/>
-      <div className="grid">
-        <h3 className="font-bold">Junior Penetration Tester (eJPTv2)</h3>
-        <div className="flex items-center">
-          <p className="mr-5 bg-red-100 p-1 text-[#d32a2a] font-bold text-base rounded">2025</p>
-          <p className="text-[rgba(123,138,156,1)]">INE Security</p>
+        <div className="flex flex-col gap-6 w-full">
+          <div className="border border-slate-700 bg-slate-800/50 backdrop-blur-sm text-left p-6 md:p-8 shadow-xl rounded-2xl hover:border-red-500/30 transition-colors duration-300">
+            <h1 className="font-bold text-2xl text-white mb-1">Ingeniería Civil en Informática</h1>
+            <p className="text-slate-400 mb-6 font-medium">Universidad de Los Lagos</p>
+            <div className="flex items-center">
+              <span className="bg-red-500/10 text-red-400 px-3 py-1 font-semibold text-sm rounded-full mr-4 border border-red-500/20">2021 - Presente</span>
+              <p className="text-slate-500 text-sm font-medium">En curso</p>
+            </div>
+          </div>
+
+          <div className="border border-slate-700 bg-slate-800/50 backdrop-blur-sm text-left p-6 md:p-8 shadow-xl rounded-2xl hover:border-red-500/30 transition-colors duration-300 h-full">
+            <h1 className="font-bold text-2xl text-white mb-6">Certificaciones</h1>
+
+            <div className="flex flex-col sm:flex-row mb-4 gap-6 items-start">
+              <img src={eJPT} alt="eJPTv2" className="w-24 h-24 object-contain rounded-lg bg-white/10 p-2 border border-slate-600" />
+              <div className="grid gap-2">
+                <h3 className="font-bold text-lg text-white">Junior Penetration Tester (eJPTv2)</h3>
+                <div className="flex items-center gap-4">
+                  <span className="bg-red-500/10 text-red-400 px-3 py-1 font-semibold text-sm rounded-full border border-red-500/20">2025</span>
+                  <p className="text-slate-400 text-sm">INE Security</p>
+                </div>
+                <p className="text-slate-400 text-sm leading-relaxed mt-2">
+                  Certificación práctica que simula escenarios reales para evaluar habilidades en metodologías de assessment, auditoría de hosts y redes, pruebas de penetración y análisis de aplicaciones web.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-        <p className="text-[rgba(123,138,156,1)]">
-          Certificación práctica que simula escenarios reales para evaluar habilidades en metodologías de assessment, auditoría de hosts y redes, pruebas de penetración y análisis de aplicaciones web.
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
 
-        <div className="border border-red-200 bg-white text-left p-5 shadow rounded w-full md:w-1/2">
-          <h1 className="font-bold text-xl">Cursos</h1>
-          <p className="text-[rgba(123,138,156,1)] mb-4">Formación complementaria</p>
-          <div className="grid mb-4">
-            <h3 className="font-bold">Ethical Hacker</h3>
-            <div className="flex items-center">
-              <p className="mr-5 bg-red-100 p-1 text-[#d32a2a] font-bold text-base rounded">2025</p>
-              <p className="text-[rgba(123,138,156,1)]">CISCO Networking Academy</p>
-            </div>
-            <p className="text-[rgba(123,138,156,1)]">Fundamentos clave del hacking ético: análisis de vulnerabilidades, metodologías ofensivas y pensamiento estratégico ante amenazas reales.</p>
-          </div>
+        <div className="border border-slate-700 bg-slate-800/50 backdrop-blur-sm text-left p-6 md:p-8 shadow-xl rounded-2xl hover:border-red-500/30 transition-colors duration-300 w-full">
+          <h1 className="font-bold text-2xl text-white mb-8">Cursos</h1>
 
-          <div className="grid mb-4">
-            <h3 className="font-bold">Network Technician Career Path</h3>
-            <div className="flex items-center">
-              <p className="mr-5 bg-red-100 p-1 text-[#d32a2a] font-bold text-base rounded">2025</p>
-              <p className="text-[rgba(123,138,156,1)]">CISCO Networking Academy</p>
+          <div className="space-y-8">
+            <div className="group">
+              <h3 className="font-bold text-lg text-white mb-2 group-hover:text-red-400 transition-colors">Ethical Hacker</h3>
+              <div className="flex items-center gap-4 mb-3">
+                <span className="bg-red-500/10 text-red-400 px-3 py-1 font-semibold text-xs rounded-full border border-red-500/20">2025</span>
+                <p className="text-slate-500 text-sm">CISCO Networking Academy</p>
+              </div>
+              <p className="text-slate-400 text-sm leading-relaxed">Fundamentos clave del hacking ético: análisis de vulnerabilidades, metodologías ofensivas y pensamiento estratégico ante amenazas reales.</p>
             </div>
-            <p className="text-[rgba(123,138,156,1)]">Trayectoria Cisco para Técnico en Redes: aprender cómo operan las redes, dispositivos, medios, protocolos, y desarrollar habilidades clave en diagnóstico y soporte técnico de redes.</p>
-          </div>
 
-          <div className="grid mb-4">
-            <h3 className="font-bold">Junior Penetration Tester</h3>
-            <div className="flex items-center">
-              <p className="mr-5 bg-red-100 p-1 text-[#d32a2a] font-bold text-base rounded">2025</p>
-              <p className="text-[rgba(123,138,156,1)]">TryHackMe</p>
-            </div>
-            <p className="text-[rgba(123,138,156,1)]">Habilidades esenciales para un Pentester Junior.</p>
-          </div>
+            <div className="h-px bg-slate-700/50 w-full"></div>
 
-          <div className="grid">
-            <h3 className="font-bold">Liderazgo</h3>
-            <div className="flex items-center">
-              <p className="mr-5 bg-red-100 p-1 text-[#d32a2a] font-bold text-base rounded">2024</p>
-              <p className="text-[rgba(123,138,156,1)]">Santander Open Academy</p>
+            <div className="group">
+              <h3 className="font-bold text-lg text-white mb-2 group-hover:text-red-400 transition-colors">Network Technician Career Path</h3>
+              <div className="flex items-center gap-4 mb-3">
+                <span className="bg-red-500/10 text-red-400 px-3 py-1 font-semibold text-xs rounded-full border border-red-500/20">2025</span>
+                <p className="text-slate-500 text-sm">CISCO Networking Academy</p>
+              </div>
+              <p className="text-slate-400 text-sm leading-relaxed">Trayectoria Cisco para Técnico en Redes: aprender cómo operan las redes, dispositivos, medios, protocolos, y desarrollar habilidades clave en diagnóstico y soporte técnico de redes.</p>
             </div>
-            <p className="text-[rgba(123,138,156,1)]">Tipos de liderazgo y cómo usarlos en cada situación.</p>
+
+            <div className="h-px bg-slate-700/50 w-full"></div>
+
+            <div className="group">
+              <h3 className="font-bold text-lg text-white mb-2 group-hover:text-red-400 transition-colors">Junior Penetration Tester</h3>
+              <div className="flex items-center gap-4 mb-3">
+                <span className="bg-red-500/10 text-red-400 px-3 py-1 font-semibold text-xs rounded-full border border-red-500/20">2025</span>
+                <p className="text-slate-500 text-sm">TryHackMe</p>
+              </div>
+              <p className="text-slate-400 text-sm leading-relaxed">Habilidades esenciales para un Pentester Junior.</p>
+            </div>
+
+            <div className="h-px bg-slate-700/50 w-full"></div>
+
+            <div className="group">
+              <h3 className="font-bold text-lg text-white mb-2 group-hover:text-red-400 transition-colors">Liderazgo</h3>
+              <div className="flex items-center gap-4 mb-3">
+                <span className="bg-red-500/10 text-red-400 px-3 py-1 font-semibold text-xs rounded-full border border-red-500/20">2024</span>
+                <p className="text-slate-500 text-sm">Santander Open Academy</p>
+              </div>
+              <p className="text-slate-400 text-sm leading-relaxed">Tipos de liderazgo y cómo usarlos en cada situación.</p>
+            </div>
           </div>
         </div>
       </div>

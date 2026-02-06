@@ -9,42 +9,55 @@ function CONTACT() {
     };
 
     return (
-        <div className="text-center mb-10">
-            <div className="mb-5">
-                <h1 className="bg-red-100 p-1 text-[#d32a2a] font-bold inline-block">Contacto</h1>
+
+        <div className="text-center py-20 bg-slate-900 relative border-t border-slate-800">
+            <div className="flex flex-col justify-center items-center mb-12">
+                <h1 className="text-4xl font-bold text-white mb-2">Contacto</h1>
+                <div className="h-1 w-20 bg-red-500 rounded-full"></div>
             </div>
-            <div className="grid justify-center items-center gap-6 mb-10 md:flex">
-                <div className="shadow grid text-left border border-red-200 p-4 rounded justify-center w-[300px]">
-                    <h1 className="text-black font-bold mb-4 text-xl">
-                        <FontAwesomeIcon icon={faEnvelope} className='h-[20px] text-[#d32a2a]' /> Correo electrónico
+
+            <div className="grid justify-center items-center gap-6 mb-10 md:flex px-6">
+                <div className="group bg-slate-800/50 backdrop-blur-sm border border-slate-700 text-left p-6 rounded-2xl shadow-xl w-full md:w-[350px] hover:border-red-500/50 transition-all duration-300 hover:-translate-y-1">
+                    <h1 className="text-white font-bold mb-4 text-xl flex items-center gap-3">
+                        <div className="p-2 bg-slate-700 rounded-lg group-hover:bg-red-500/20 transition-colors">
+                            <FontAwesomeIcon icon={faEnvelope} className='text-red-500' />
+                        </div>
+                        Correo electrónico
                     </h1>
-                    <p className="text-black font-bold">joaquinpicazovelasco@gmail.com</p>
-                    <p className="text-[rgba(123,138,156,1)] mb-4">Respuesta en 24-48 horas</p>
-                    <button onClick={handleCopyEmail} className="shadow border border-gray-300 bg-gray-100 w-full p-2 rounded hover:bg-gray-200 transition cursor-pointer">
+                    <p className="text-slate-300 font-medium mb-1">joaquinpicazovelasco@gmail.com</p>
+                    <p className="text-slate-500 text-sm mb-6">Respuesta en 24-48 horas</p>
+                    <button onClick={handleCopyEmail} className="w-full bg-slate-700 text-white px-4 py-3 rounded-xl hover:bg-slate-600 transition-colors cursor-pointer font-medium border border-slate-600 active:scale-95 duration-150">
                         Copiar correo electrónico
                     </button>
                 </div>
-                <div className="shadow text-left border border-red-200 p-4 rounded justify-center w-[300px]">
-                    <h1 className="text-black font-bold mb-4 text-xl">
-                        <FontAwesomeIcon icon={faLinkedin} className='h-[20px] text-[#d32a2a]' /> LinkedIn
+
+                <div className="group bg-slate-800/50 backdrop-blur-sm border border-slate-700 text-left p-6 rounded-2xl shadow-xl w-full md:w-[350px] hover:border-red-500/50 transition-all duration-300 hover:-translate-y-1">
+                    <h1 className="text-white font-bold mb-4 text-xl flex items-center gap-3">
+                        <div className="p-2 bg-slate-700 rounded-lg group-hover:bg-red-500/20 transition-colors">
+                            <FontAwesomeIcon icon={faLinkedin} className='text-red-500' />
+                        </div>
+                        LinkedIn
                     </h1>
-                    <p className="text-black font-bold">Joaquín Picazo Velasco</p>
-                    <p className="text-[rgba(123,138,156,1)] mb-4">Contactar por LinkedIn</p>
+                    <p className="text-slate-300 font-medium mb-1">Joaquín Picazo Velasco</p>
+                    <p className="text-slate-500 text-sm mb-6">Contactar por LinkedIn</p>
                     <a href="https://www.linkedin.com/in/joaquín-picazo-velasco-aa4458380" target="_blank" rel="noopener noreferrer" className="block">
-                        <button className="shadow border border-gray-300 bg-gray-100 p-2 rounded w-full hover:bg-gray-200 transition cursor-pointer">
+                        <button className="w-full bg-slate-700 text-white px-4 py-3 rounded-xl hover:bg-slate-600 transition-colors cursor-pointer font-medium border border-slate-600 active:scale-95 duration-150">
                             Visitar perfil
                         </button>
                     </a>
                 </div>
 
-                <div className="shadow text-left border border-red-200 p-4 rounded justify-center w-[300px]">
-                    <h1 className="text-black font-bold mb-4 text-xl">
-                        <FontAwesomeIcon icon={faGithub} className='h-[20px] text-[#d32a2a]' /> GitHub
+                <div className="group bg-slate-800/50 backdrop-blur-sm border border-slate-700 text-left p-6 rounded-2xl shadow-xl w-full md:w-[350px] hover:border-red-500/50 transition-all duration-300 hover:-translate-y-1">
+                    <h1 className="text-white font-bold mb-4 text-xl flex items-center gap-3">
+                        <div className="p-2 bg-slate-700 rounded-lg group-hover:bg-red-500/20 transition-colors">
+                            <FontAwesomeIcon icon={faGithub} className='text-red-500' />
+                        </div>
+                        GitHub
                     </h1>
-                    <p className="text-black font-bold">JoaquinPicazoV</p>
-                    <p className="text-[rgba(123,138,156,1)] mb-4">Explorar repositorio</p>
+                    <p className="text-slate-300 font-medium mb-1">JoaquinPicazoV</p>
+                    <p className="text-slate-500 text-sm mb-6">Explorar repositorio</p>
                     <a href="https://github.com/JoaquinPicazoV" target="_blank" rel="noopener noreferrer" className="block">
-                        <button className="shadow border border-gray-300 bg-gray-100 p-2 rounded w-full hover:bg-gray-200 transition cursor-pointer">
+                        <button className="w-full bg-slate-700 text-white px-4 py-3 rounded-xl hover:bg-slate-600 transition-colors cursor-pointer font-medium border border-slate-600 active:scale-95 duration-150">
                             Ver GitHub
                         </button>
                     </a>
