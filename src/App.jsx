@@ -11,17 +11,17 @@ import SKILLS from './components/skills';
 
 function App() {
   return (
-    <div className="w-full h-full">
-   
-        <INTRODUCTION/>
-        <PERSONALINFORMATION/>
-        <EDUCATION/>
-        <SKILLS/>
-        <NETANDCYB/>
-        <WRITEUPS/>
-        <PROJECTS/>
-        <CONTACT/>
-        <FOOTER/>
+    <div className="w-full h-full overflow-x-hidden">
+
+      <INTRODUCTION />
+      <PERSONALINFORMATION />
+      <EDUCATION />
+      <SKILLS />
+      <NETANDCYB />
+      <WRITEUPS />
+      <PROJECTS />
+      <CONTACT />
+      <FOOTER />
 
     </div>
   );
