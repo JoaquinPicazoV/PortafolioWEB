@@ -2,18 +2,18 @@ import React from 'react';
 import eJPT from '../assets/certifications/eJPT.png';
 function EDUCATION() {
   return (
-    <div className="grid text-center justify-center items-center py-20 bg-slate-900 relative">
+    <div className="grid text-center justify-center items-center py-12 md:py-20 bg-slate-900 relative">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-[20%] left-[10%] w-72 h-72 bg-blue-500/5 rounded-full blur-3xl"></div>
         <div className="absolute bottom-[20%] right-[10%] w-72 h-72 bg-red-500/5 rounded-full blur-3xl"></div>
       </div>
 
-      <div className="relative z-10 mb-12">
-        <h1 className="text-4xl font-bold text-white mb-2">Educación</h1>
+      <div className="relative z-10 mb-8 md:mb-12">
+        <h1 className="text-3xl md:text-4xl font-bold text-white mb-2">Educación</h1>
         <div className="h-1 w-20 bg-red-500 rounded-full mx-auto"></div>
       </div>
 
-      <div className="grid lg:grid-cols-2 gap-8 w-full max-w-6xl px-6 relative z-10">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full max-w-6xl px-6 relative z-10">
 
         <div className="flex flex-col gap-6 w-full">
           <div className="border border-slate-700 bg-slate-800/50 backdrop-blur-sm text-left p-6 md:p-8 shadow-xl rounded-2xl hover:border-red-500/30 transition-colors duration-300">

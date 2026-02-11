@@ -6,7 +6,7 @@ import { faEnvelope, faDownload } from '@fortawesome/free-solid-svg-icons';
 function FOOTER() {
     return (
 
-        <div className="text-center px-10 py-6 bg-slate-950 border-t border-slate-900">
+        <div className="text-center px-6 md:px-10 py-6 bg-slate-950 border-t border-slate-900">
             <div className="mb-5">
                 <div className="bg-slate-800 h-[1px]"></div>
             </div>

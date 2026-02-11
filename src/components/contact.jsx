@@ -10,13 +10,13 @@ function CONTACT() {
 
     return (
 
-        <div className="text-center py-20 bg-slate-900 relative border-t border-slate-800">
-            <div className="flex flex-col justify-center items-center mb-12">
-                <h1 className="text-4xl font-bold text-white mb-2">Contacto</h1>
+        <div className="text-center py-12 md:py-20 bg-slate-900 relative border-t border-slate-800">
+            <div className="flex flex-col justify-center items-center mb-8 md:mb-12">
+                <h1 className="text-3xl md:text-4xl font-bold text-white mb-2">Contacto</h1>
                 <div className="h-1 w-20 bg-red-500 rounded-full"></div>
             </div>
 
-            <div className="grid justify-center items-center gap-6 mb-10 md:flex px-6">
+            <div className="flex flex-col md:flex-row flex-wrap justify-center items-center gap-6 mb-10 px-6">
                 <div className="group bg-slate-800/50 backdrop-blur-sm border border-slate-700 text-left p-6 rounded-2xl shadow-xl w-full md:w-[350px] hover:border-red-500/50 transition-all duration-300 hover:-translate-y-1">
                     <h1 className="text-white font-bold mb-4 text-xl flex items-center gap-3">
                         <div className="p-2 bg-slate-700 rounded-lg group-hover:bg-red-500/20 transition-colors">
