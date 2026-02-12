@@ -54,7 +54,7 @@ function EDUCATION() {
               <div className="grid gap-2">
                 <h3 className="font-bold text-lg text-white">ISO/IEC 27001 Information Security Associate™</h3>
                 <div className="flex items-center gap-4">
-                  <span className="bg-red-500/10 text-red-400 px-3 py-1 font-semibold text-sm rounded-full border border-red-500/20">2025</span>
+                  <span className="bg-red-500/10 text-red-400 px-3 py-1 font-semibold text-sm rounded-full border border-red-500/20">2026</span>
                   <p className="text-slate-400 text-sm">SkillFront</p>
                 </div>
                 <p className="text-slate-400 text-sm leading-relaxed mt-2">
