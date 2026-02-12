@@ -1,5 +1,6 @@
 import React from 'react';
 import eJPT from '../assets/certifications/eJPT.png';
+import ISO27001 from '../assets/certifications/27001Associate.png';
 function EDUCATION() {
   return (
     <div className="grid text-center justify-center items-center py-12 md:py-20 bg-slate-900 relative">
@@ -29,7 +30,9 @@ function EDUCATION() {
             <h1 className="font-bold text-2xl text-white mb-6">Certificaciones</h1>
 
             <div className="flex flex-col sm:flex-row mb-4 gap-6 items-start">
-              <img src={eJPT} alt="eJPTv2" className="w-24 h-24 object-contain rounded-lg bg-white/10 p-2 border border-slate-600" />
+              <div className="w-32 h-32 shrink-0 rounded-lg bg-white/10 p-2 border border-slate-600 flex items-center justify-center">
+                <img src={eJPT} alt="eJPTv2" className="w-full h-full object-contain" />
+              </div>
               <div className="grid gap-2">
                 <h3 className="font-bold text-lg text-white">Junior Penetration Tester (eJPTv2)</h3>
                 <div className="flex items-center gap-4">
@@ -38,6 +41,24 @@ function EDUCATION() {
                 </div>
                 <p className="text-slate-400 text-sm leading-relaxed mt-2">
                   Certificación práctica que simula escenarios reales para evaluar habilidades en metodologías de assessment, auditoría de hosts y redes, pruebas de penetración y análisis de aplicaciones web.
+                </p>
+              </div>
+            </div>
+
+            <div className="h-px bg-slate-700/50 w-full my-6"></div>
+
+            <div className="flex flex-col sm:flex-row mb-4 gap-6 items-start">
+              <div className="w-32 h-32 shrink-0 rounded-lg bg-white/10 p-2 border border-slate-600 flex items-center justify-center">
+                <img src={ISO27001} alt="ISO/IEC 27001 Information Security Associate™" className="w-full h-full object-contain" />
+              </div>
+              <div className="grid gap-2">
+                <h3 className="font-bold text-lg text-white">ISO/IEC 27001 Information Security Associate™</h3>
+                <div className="flex items-center gap-4">
+                  <span className="bg-red-500/10 text-red-400 px-3 py-1 font-semibold text-sm rounded-full border border-red-500/20">2025</span>
+                  <p className="text-slate-400 text-sm">SkillFront</p>
+                </div>
+                <p className="text-slate-400 text-sm leading-relaxed mt-2">
+                  Certificación en fundamentos de gestión de la seguridad de la información conforme a la norma internacional ISO/IEC 27001.
                 </p>
               </div>
             </div>
