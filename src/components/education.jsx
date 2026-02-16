@@ -89,6 +89,17 @@ function EDUCATION() {
 
           <div className="space-y-8">
             <div className="group">
+              <h3 className="font-bold text-lg text-white mb-2 group-hover:text-red-400 transition-colors">OWASP API Security Top 10</h3>
+              <div className="flex items-center gap-4 mb-3">
+                <span className="bg-red-500/10 text-red-400 px-3 py-1 font-semibold text-xs rounded-full border border-red-500/20">2026</span>
+                <p className="text-slate-500 text-sm">APIsec University</p>
+              </div>
+              <p className="text-slate-400 text-sm leading-relaxed">Seguridad de APIs basado en el estándar OWASP API Security Top 10 (2023).</p>
+            </div>
+
+            <div className="h-px bg-slate-700/50 w-full"></div>
+
+            <div className="group">
               <h3 className="font-bold text-lg text-white mb-2 group-hover:text-red-400 transition-colors">Ethical Hacker</h3>
               <div className="flex items-center gap-4 mb-3">
                 <span className="bg-red-500/10 text-red-400 px-3 py-1 font-semibold text-xs rounded-full border border-red-500/20">2025</span>
