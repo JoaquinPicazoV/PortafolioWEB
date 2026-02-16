@@ -89,6 +89,17 @@ function EDUCATION() {
 
           <div className="space-y-8">
             <div className="group">
+              <h3 className="font-bold text-lg text-white mb-2 group-hover:text-red-400 transition-colors">Intro to Splunk + Using Fields + Visualizations</h3>
+              <div className="flex items-center gap-4 mb-3">
+                <span className="bg-red-500/10 text-red-400 px-3 py-1 font-semibold text-xs rounded-full border border-red-500/20">2026</span>
+                <p className="text-slate-500 text-sm">Splunk</p>
+              </div>
+              <p className="text-slate-400 text-sm leading-relaxed">Introducción a Splunk, uso de campos de búsqueda/filtrado y visualizaciones de resultados en gráficos.</p>
+            </div>
+
+            <div className="h-px bg-slate-700/50 w-full"></div>
+
+            <div className="group">
               <h3 className="font-bold text-lg text-white mb-2 group-hover:text-red-400 transition-colors">OWASP API Security Top 10</h3>
               <div className="flex items-center gap-4 mb-3">
                 <span className="bg-red-500/10 text-red-400 px-3 py-1 font-semibold text-xs rounded-full border border-red-500/20">2026</span>
@@ -111,6 +122,15 @@ function EDUCATION() {
             <div className="h-px bg-slate-700/50 w-full"></div>
 
             <div className="group">
+              <h3 className="font-bold text-lg text-white mb-2 group-hover:text-red-400 transition-colors">Junior Cybersecurity Analyst Career Path</h3>
+              <div className="flex items-center gap-4 mb-3">
+                <span className="bg-red-500/10 text-red-400 px-3 py-1 font-semibold text-xs rounded-full border border-red-500/20">2025</span>
+                <p className="text-slate-500 text-sm">CISCO Networking Academy</p>
+              </div>
+              <p className="text-slate-400 text-sm leading-relaxed">Trayectoria Cisco para Analista Junior de Ciberseguridad: Desarrollar competencias clave en redes, gestión de riesgos, defensa de endpoints y administración de amenazas</p>
+            </div>
+
+            <div className="group">
               <h3 className="font-bold text-lg text-white mb-2 group-hover:text-red-400 transition-colors">Network Technician Career Path</h3>
               <div className="flex items-center gap-4 mb-3">
                 <span className="bg-red-500/10 text-red-400 px-3 py-1 font-semibold text-xs rounded-full border border-red-500/20">2025</span>
@@ -120,26 +140,6 @@ function EDUCATION() {
             </div>
 
             <div className="h-px bg-slate-700/50 w-full"></div>
-
-            <div className="group">
-              <h3 className="font-bold text-lg text-white mb-2 group-hover:text-red-400 transition-colors">Junior Penetration Tester</h3>
-              <div className="flex items-center gap-4 mb-3">
-                <span className="bg-red-500/10 text-red-400 px-3 py-1 font-semibold text-xs rounded-full border border-red-500/20">2025</span>
-                <p className="text-slate-500 text-sm">TryHackMe</p>
-              </div>
-              <p className="text-slate-400 text-sm leading-relaxed">Habilidades esenciales para un Pentester Junior.</p>
-            </div>
-
-            <div className="h-px bg-slate-700/50 w-full"></div>
-
-            <div className="group">
-              <h3 className="font-bold text-lg text-white mb-2 group-hover:text-red-400 transition-colors">Liderazgo</h3>
-              <div className="flex items-center gap-4 mb-3">
-                <span className="bg-red-500/10 text-red-400 px-3 py-1 font-semibold text-xs rounded-full border border-red-500/20">2024</span>
-                <p className="text-slate-500 text-sm">Santander Open Academy</p>
-              </div>
-              <p className="text-slate-400 text-sm leading-relaxed">Tipos de liderazgo y cómo usarlos en cada situación.</p>
-            </div>
           </div>
         </div>
       </div>
