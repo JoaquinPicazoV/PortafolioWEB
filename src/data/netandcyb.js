@@ -9,12 +9,30 @@ import TAILWINDCSS from '../assets/logos/tailwindcss.png';
 import JS from '../assets/logos/js.png';
 import HTML from '../assets/logos/html.png';
 import EXCEL from '../assets/logos/excel.png';
+import PYTHON from '../assets/logos/python.png';
+
+import ABUSEIPDB from '../assets/logosherramientasdef/abuseipdb.png';
+import ANYRUN from '../assets/logosherramientasdef/anyrun_cropped.png';
+import VIRUSTOTAL from '../assets/logosherramientasdef/virustotal.png';
+import WHOIS from '../assets/logosherramientasdef/whois.png';
 
 export const cybProjects = [
+
+    {
+        title: "Simulaciones SOC",
+        subtitle: "Análisis de tráfico, detección de amenazas, respuesta a incidentes y fortificación de sistemas en entornos simulados de Blue Team.",
+        internalUrl: "/soc-writeups",
+        languages: [
+            { name: "AbuseIPDB", logo: ABUSEIPDB },
+            { name: "Any.Run", logo: ANYRUN },
+            { name: "VirusTotal", logo: VIRUSTOTAL },
+            { name: "Whois", logo: WHOIS }
+        ]
+    },
     {
         title: "Writeups máquinas vulneradas para eJPTv2 (+50)",
         subtitle: "Realizo mis propios writeups de las máquinas vulneradas en entornos controlados para preparación de la certificación eJPTv2.",
-        url: "https://github.com/JoaquinPicazoV/Writeups-Maquinas-eJPTv2",
+        internalUrl: "/pentesting-writeups",
         languages: [
             { name: "Kali Linux", logo: KALI },
             { name: "Nmap", logo: NMAP },
@@ -41,6 +59,22 @@ export const cybProjects = [
         url: "https://docs.google.com/spreadsheets/d/1gsqUpy1JD9BvEVzW6hf2StR2F8PbDi50OESjaN-8K_E/edit?usp=sharing",
         languages: [
             { name: "Excel", logo: EXCEL },
+        ]
+    },
+    {
+        title: "Password entropy analyzer",
+        subtitle: "Evalúa la seguridad de tus contraseñas calculando su entropía matemática y verificando si han sido expuestas en brechas de datos mediante la API de Have I Been Pwned, garantizando tu privacidad al enviar únicamente un hash parcial (SHA-1) para que tu contraseña real nunca salga de tu equipo.",
+        url: "https://github.com/JoaquinPicazoV/Password-analyzer/blob/main/main.py",
+        languages: [
+            { name: "Python", logo: PYTHON },
+        ]
+    },
+    {
+        title: "Compromised Email Checker",
+        subtitle: "Herramienta de OSINT que utiliza la API de XposedOrNot para detectar si tu correo electrónico ha sido expuesto en brechas de datos y generar informes detallados.",
+        url: "https://github.com/JoaquinPicazoV/Compromised-Email-Checker",
+        languages: [
+            { name: "Python", logo: PYTHON },
         ]
     },
 ];

@@ -3,7 +3,7 @@ import { writeupsData } from '../data/writeups';
 
 function WRITEUPS() {
   return (
-    <div className="w-full flex justify-center items-center py-12 md:py-20 bg-slate-900 relative border-t border-slate-800">
+    <div className="w-full flex justify-center items-center py-12 md:py-20 bg-transparent relative border-t border-slate-800">
 
       <div className="w-full md:w-5/6 z-10">
         <div className="flex flex-col justify-center items-center mb-8 md:mb-12">
@@ -16,8 +16,8 @@ function WRITEUPS() {
             {writeupsData.map((proyecto, indice) => (
               <div className="group bg-slate-800/50 backdrop-blur-sm border border-slate-700 p-5 rounded-2xl shadow-xl min-w-[300px] w-[300px] hover:border-red-500/50 hover:bg-slate-800 transition-all duration-300 hover:-translate-y-2 flex flex-col justify-between" key={indice}>
                 <div>
-                  <div className="rounded-xl overflow-hidden mb-4 border border-slate-700 bg-slate-900/50 group-hover:border-slate-600 transition-colors flex items-center justify-center p-2">
-                    <img src={proyecto.imagen} className="h-40 w-full object-contain transform group-hover:scale-105 transition-transform duration-500" alt="Vista del proyecto" />
+                  <div className="rounded-xl overflow-hidden mb-4 border border-slate-700 bg-transparent/50 group-hover:border-slate-600 transition-colors flex items-center justify-center p-2">
+                    <img src={proyecto.imagen} loading="lazy" className="h-40 w-full object-contain transform group-hover:scale-105 transition-transform duration-500" alt="Vista del proyecto" />
                   </div>
                   <h3 className="text-lg font-bold text-white group-hover:text-red-400 transition-colors mb-4">{proyecto.titulo}</h3>
 

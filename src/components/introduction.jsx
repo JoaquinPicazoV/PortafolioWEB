@@ -1,46 +1,42 @@
 import { React } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faDownload, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import fotoPerfil from '../assets/fotoPerfil.png'
 
 function INTRODUCTION() {
 
   return (
-    <div className="w-full min-h-screen flex flex-col md:flex-row justify-center items-center bg-slate-900 p-6 md:p-10 relative overflow-hidden">
+    <div className="w-full min-h-screen flex flex-col md:flex-row justify-center items-center bg-transparent p-4 md:p-10 relative overflow-hidden">
 
-      <div className="absolute top-0 right-0 w-96 h-96 bg-red-500/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
-      <div className="absolute bottom-0 left-0 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2 pointer-events-none"></div>
+      {/* Decorative background grid is now handled globally */}
 
       <div className="w-full md:w-1/2 flex justify-center items-center z-10 mb-8 md:mb-0">
         <div className="relative group">
-          <div className="absolute -inset-1 bg-gradient-to-r from-red-600 to-blue-600 rounded-full blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
-          <div className="relative flex justify-center text-center items-center border-4 border-slate-800 rounded-full p-1 bg-slate-900">
-            <img src={fotoPerfil} alt="ImagenPerfil" className="flex w-56 h-56 sm:w-64 sm:h-64 md:w-80 md:h-80 rounded-full object-cover grayscale-0 hover:grayscale transition-all duration-500"></img>
+          <div className="relative flex justify-center text-center items-center bg-black border border-emerald-500/30 p-2 group-hover:border-emerald-500 transition-all duration-500">
+            <div className="absolute top-0 left-0 w-2 h-2 border-t-2 border-l-2 border-emerald-500"></div>
+            <div className="absolute top-0 right-0 w-2 h-2 border-t-2 border-r-2 border-emerald-500"></div>
+            <div className="absolute bottom-0 left-0 w-2 h-2 border-b-2 border-l-2 border-emerald-500"></div>
+            <div className="absolute bottom-0 right-0 w-2 h-2 border-b-2 border-r-2 border-emerald-500"></div>
+            <img src={fotoPerfil} alt="ImagenPerfil" className="flex w-32 h-32 sm:w-48 sm:h-48 md:w-80 md:h-80 object-cover object-top transition-all duration-500 shadow-[0_0_15px_rgba(16,185,129,0.3)]"></img>
           </div>
         </div>
       </div>
-      <div className="w-full md:w-1/2 mt-4 md:mt-0 z-10 text-center md:text-left">
-        <h1 className="text-white text-4xl sm:text-5xl md:text-6xl font-bold mb-4 tracking-tight">
-          Joaquín <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-rose-400">Picazo</span>
-        </h1>
-        <h2 className="text-xl sm:text-2xl md:text-3xl text-slate-300 font-semibold mb-6">
-          Estudiante de <span className="text-red-400">Ingeniería Civil en Informática</span>
-        </h2>
-        <p className="text-slate-400 mb-5 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto md:mx-0">
-          Mi nombre es Joaquín Picazo y soy estudiante de quinto año de Ingeniería Civil en Informática en la
-          Universidad de Los Lagos. En lo personal me gusta el mundo de la ciberseguridad, aunque aún estoy consolidando mis conocimientos en los fundamentos,
-          me motiva el aprendizaje continuo y la exploración de nuevos conocimientos.
-        </p>
-        <p className="text-slate-400 mb-5 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto md:mx-0">
-          Cada vez que puedo intento fortalecer mis habilidades en ciberseguridad ofensiva, complementando mi formación
-          académica con cursos, material educativo en YouTube, y diversas plataformas especializadas. En mis tiempos libres, practico principalmente vulnerando máquinas en TryHackMe,
-          además de explorar plataformas como Hack The Box y Dockerlabs, que me han permitido desarrollar un enfoque práctico y autodidacta en el área.
-        </p>
-        <p className="text-slate-400 mb-5 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto md:mx-0">
-          Mi meta es seguir perfeccionándome ciberseguridad ofensiva, actualmente cuento con la certificación eJPT
-          (Junior Penetration Tester) de INE Security, pero, a futuro me gustaría seguir estudiando y aprender sobre entornos de Active Directory y nuevas técnicas de pivoting
-          para optar por certificaciones más complejas como le eCPPT y a un futuro lejano la OSCP. Estoy comprometido con el aprendizaje continuo y listo para enfrentar nuevos desafíos.
-        </p>
+      <div className="w-full md:w-1/2 mt-4 md:mt-0 z-10 text-left">
+        <div className="font-mono text-emerald-500 mb-2 font-bold flex items-center text-sm md:text-base">
+          <div><span className="text-slate-500">guest@portfolio:~$</span> whoami</div>
+        </div>
+        <div>
+          <h1 className="text-white text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 font-mono tracking-tighter uppercase cyber-glitch-hover inline-block cursor-default">
+            Joaquín Picazo
+          </h1>
+          <h2 className="text-base sm:text-lg md:text-2xl text-slate-300 font-mono mb-8 border-l-4 border-emerald-500 pl-4 bg-emerald-500/5 py-2">
+            [<span className="text-emerald-400">ROLE</span>: Estudiante Ing. Civil Informática]
+          </h2>
+          <p className="text-slate-400 mb-5 text-sm sm:text-base md:text-lg leading-relaxed max-w-2xl mx-auto md:mx-0">
+            Soy estudiante de último semestre de Ingeniería Civil en Informática, especializándome en <strong>Ciberseguridad</strong> y con la certificación <strong>eJPTv2</strong>. Mi base en desarrollo y redes me permite analizar arquitecturas con una mentalidad tanto de defensor como de atacante.
+          </p>
+          <p className="text-slate-400 mb-5 text-sm sm:text-base md:text-lg leading-relaxed max-w-2xl mx-auto md:mx-0">
+            He vulnerado y documentado más de 50 máquinas (entornos controlados). En la actualidad me preparo para la certificación <strong>CRTA</strong>, complementando mi perfil con formación activa en normativas <strong>GRC y estrategias de detección y defensa</strong>, incluyendo prácticas en simulaciones de centros de operaciones de seguridad (<strong>SOC</strong>).
+          </p>
+        </div>
       </div>
     </div>
   )

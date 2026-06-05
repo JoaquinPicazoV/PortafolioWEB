@@ -2,7 +2,7 @@ import { React } from 'react'
 
 function PERSONALINFORMATION() {
     return (
-        <div className="w-full bg-slate-900 p-6 md:p-10 flex flex-col lg:flex-row gap-8 lg:gap-16 items-center relative">
+        <div className="w-full bg-transparent p-6 md:p-10 flex flex-col lg:flex-row gap-8 lg:gap-16 items-center relative">
             <div className="w-full lg:w-1/2 space-y-6 md:space-y-8 z-10 text-center lg:text-left">
                 <div className="relative inline-block lg:block">
                     <h1 className="text-3xl md:text-4xl font-bold text-white mb-2 relative z-10">Sobre mí</h1>

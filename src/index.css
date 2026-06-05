@@ -1,20 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap');
 @import "tailwindcss";
 
 @theme {
     --font-sans: 'Outfit', sans-serif;
+    --font-mono: 'Fira Code', monospace;
 }
 
 :root {
-    --primary-color: #ef4444;
+    --primary-color: #10b981;
 }
 
 body {
     font-family: 'Outfit', sans-serif;
-    background-color: #0f172a;
+    background-color: #000000;
     color: #f8fafc;
     overflow-x: hidden;
-    max-width: 100vw;
+    /* Un resplandor muy sutil arriba, y un patrón de puntos en lugar de líneas gruesas */
+    background-image: 
+      radial-gradient(circle at 50% 0%, rgba(16, 185, 129, 0.07) 0%, transparent 60%),
+      radial-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+    background-size: 100% 100%, 24px 24px;
+    background-attachment: fixed;
 }
 
 
@@ -35,3 +42,143 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background: #64748b;
 }
+
+/* EFECTOS ESPECIALES (CIBERSEGURIDAD / RRHH FRIENDLY) */
+
+/* Scanlines muy sutiles para dar efecto terminal sin dañar legibilidad */
+.scanlines {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0) 50%,
+    rgba(0, 0, 0, 0.2) 50%,
+    rgba(0, 0, 0, 0.2)
+  );
+  background-size: 100% 4px;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.12; /* Muy bajo para que RRHH no se distraiga */
+}
+
+/* Efecto glitch súper sutil en hover (separa canales RGB ligeramente) */
+.cyber-glitch-hover {
+  transition: all 0.1s ease;
+}
+.cyber-glitch-hover:hover {
+  text-shadow: 2px 0 rgba(16, 185, 129, 0.4), -2px 0 rgba(255, 0, 0, 0.3);
+  transform: scale(1.01);
+}
+
+/* Aparecer suavemente desde abajo */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Animación de mapa de amenazas (Efecto Cometa / Láser) */
+/* El SVG debe tener pathLength="1" */
+.attack-line {
+  stroke-dasharray: 0.15 1.2;
+  stroke-dashoffset: 1.35;
+  animation: attack-dash 1.5s ease-out forwards;
+}
+
+@keyframes attack-dash {
+  0% {
+    stroke-dashoffset: 1.35;
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    stroke-dashoffset: -0.2;
+    opacity: 0;
+  }
+}
+
+/* Efecto de escáner brillante al pasar el ratón (Cyber Shine) */
+.cyber-shine {
+  position: relative;
+  overflow: hidden;
+}
+.cyber-shine::before {
+  content: "";
+  position: absolute;
+  top: 0; 
+  left: -150%;
+  width: 50%; 
+  height: 100%;
+  background: linear-gradient(to right, transparent, rgba(16,185,129,0.15), transparent);
+  transform: skewX(-25deg);
+  transition: all 0.6s ease-out;
+  pointer-events: none;
+  z-index: 10;
+}
+.cyber-shine:hover::before {
+  left: 200%;
+}
+
+/* Animación de escritura de consola (Typing effect) */
+.typing-text {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #10b981;
+  width: 0;
+  /* El retraso de 1.8s espera a que termine el BootScreen */
+  animation: typeWhoami 1s steps(26, end) 1.8s forwards, blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typeWhoami {
+  from { width: 0 }
+  to { width: 26.5ch } /* .5 para que el cursor no pise la 'i' */
+}
+
+.terminal-output {
+  opacity: 0;
+  /* 1.8s (delay) + 1s (escribiendo) + 0.1s (pausa) = 2.9s */
+  animation: showOutput 0s 2.9s forwards;
+}
+
+@keyframes showOutput {
+  to { opacity: 1; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #10b981; }
+}
+
+/* Efecto de Boot Screen (Secuencia de inicio) */
+.typing-line-1 { animation: typeLine 0.3s steps(30) forwards, blink-caret 0.3s infinite; }
+.typing-line-2 { animation: showLine 0s 0.4s forwards; }
+.typing-line-3 { animation: showLine 0s 0.7s forwards; }
+.typing-line-4 { animation: showLine 0s 1.0s forwards; }
+.typing-line-5 { animation: typeLine 0.3s 1.3s steps(20) forwards; border-right: 2px solid transparent; }
+.animate-boot-fade-out { animation: bootFadeOut 0.3s 1.7s forwards ease-in-out; }
+
+@keyframes typeLine { 
+  from { width: 0; opacity: 1; } 
+  to { width: 100%; opacity: 1; } 
+}
+@keyframes showLine { 
+  to { width: 100%; opacity: 1; } 
+}
+@keyframes bootFadeOut { 
+  to { opacity: 0; visibility: hidden; transform: scale(1.05); filter: blur(4px); } 
+}

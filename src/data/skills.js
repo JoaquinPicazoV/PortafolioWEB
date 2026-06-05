@@ -19,29 +19,26 @@ import BURPSUITE from '../assets/logos/burpsuite.png';
 import SQLMAP from '../assets/logos/sqlmap.png';
 import ReactIcon from '../assets/logos/react.svg';
 
-export const dominatedSkills = [
+export const devSkills = [
     { nombre: "HTML", url: HTML },
     { nombre: "CSS", url: CSS },
     { nombre: "Javascript", url: JS },
-    { nombre: "GitHub", url: GITHUB },
-    { nombre: "Node.js", url: NODE },
-    { nombre: "PostgreSQL", url: POSTGRESQL },
-    { nombre: "Tailwindcss", url: TAILWINDCSS }
-];
-
-export const knownSkills = [
-    { nombre: "C", url: C },
-    { nombre: "Nmap", url: NMAP },
-    { nombre: "Hydra", url: HYDRA },
-    { nombre: "Metasploit", url: METASPLOIT },
-    { nombre: "Python", url: PYTHON },
-    { nombre: "John The Ripper", url: JOHN },
-    { nombre: "SQLmap", url: SQLMAP },
-    { nombre: "Packet Tracer", url: PACKET },
-];
-
-export const learningSkills = [
-    { nombre: "Bash", url: BASH },
-    { nombre: "BurpSuite", url: BURPSUITE },
     { nombre: "React", url: ReactIcon },
+    { nombre: "Node.js", url: NODE },
+    { nombre: "Python", url: PYTHON },
+    { nombre: "C", url: C },
+    { nombre: "PostgreSQL", url: POSTGRESQL },
+    { nombre: "Tailwindcss", url: TAILWINDCSS },
+    { nombre: "GitHub", url: GITHUB }
+];
+
+export const cyberSkills = [
+    { nombre: "Nmap", url: NMAP },
+    { nombre: "BurpSuite", url: BURPSUITE },
+    { nombre: "Metasploit", url: METASPLOIT },
+    { nombre: "SQLmap", url: SQLMAP },
+    { nombre: "Hydra", url: HYDRA },
+    { nombre: "John The Ripper", url: JOHN },
+    { nombre: "Bash", url: BASH },
+    { nombre: "Packet Tracer", url: PACKET }
 ];
