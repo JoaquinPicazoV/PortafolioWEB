@@ -20,7 +20,7 @@ export const cybProjects = [
 
     {
         title: "Simulaciones SOC",
-        subtitle: "Análisis de tráfico, detección de amenazas, respuesta a incidentes y fortificación de sistemas en entornos simulados de Blue Team.",
+        subtitle: "Análisis de alertas de ciberseguridad en un SOC simulado, investigación de logs y contención de ataques desde rol de un analista defensivo.",
         internalUrl: "/soc-writeups",
         languages: [
             { name: "AbuseIPDB", logo: ABUSEIPDB },

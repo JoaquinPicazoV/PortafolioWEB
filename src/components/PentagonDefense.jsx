@@ -31,11 +31,7 @@ const PentagonDefense = () => {
       }
     };
 
-    // 3. Deshabilitar copiar, cortar y pegar (opcional, pero aumenta la "seguridad")
-    const handleCopyCut = (e) => {
-      e.preventDefault();
-      console.warn("ACCESO DENEGADO: Operación de portapapeles bloqueada.");
-    };
+
 
     // 4. Detección rudimentaria de DevTools (haciendo uso de un debugger infinito si está abierto)
     // Nota: Esto es un método agresivo
@@ -54,8 +50,7 @@ const PentagonDefense = () => {
 
     document.addEventListener('contextmenu', handleContextMenu);
     document.addEventListener('keydown', handleKeyDown);
-    document.addEventListener('copy', handleCopyCut);
-    document.addEventListener('cut', handleCopyCut);
+
     
     // Iniciar detección de DevTools
     // Desactivado para no bloquear a reclutadores técnicos que abran DevTools.
@@ -66,8 +61,7 @@ const PentagonDefense = () => {
     return () => {
       document.removeEventListener('contextmenu', handleContextMenu);
       document.removeEventListener('keydown', handleKeyDown);
-      document.removeEventListener('copy', handleCopyCut);
-      document.removeEventListener('cut', handleCopyCut);
+
     };
   }, []);
 

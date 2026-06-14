@@ -2,6 +2,7 @@ import React from 'react';
 import eJPT from '../assets/certifications/eJPT.png';
 import ISO27001 from '../assets/certifications/27001Associate.png';
 import ICCA from '../assets/certifications/ICCA.png';
+import CLLMSP from '../assets/certifications/CLLMSP.png';
 
 function EDUCATION() {
   return (
@@ -89,6 +90,24 @@ function EDUCATION() {
               </div>
               <p className="text-slate-400 text-sm leading-relaxed mt-2">
                 Certificación en fundamentos de gestión de la seguridad de la información conforme a la norma internacional ISO/IEC 27001.
+              </p>
+            </div>
+          </div>
+
+          <div className="h-px bg-slate-700/50 w-full my-6"></div>
+
+          <div className="flex flex-col sm:flex-row mb-4 gap-4 sm:gap-6 items-start">
+            <div className="w-20 h-20 sm:w-32 sm:h-32 shrink-0 bg-white/5 p-0 sm:p-1 border border-white/10 flex items-center justify-center overflow-hidden">
+              <img src={CLLMSP} loading="lazy" alt="Certified LLM Security Professional (CLLMSP)" className="w-full h-full object-contain scale-[1.7]" />
+            </div>
+            <div className="grid gap-2 text-left">
+              <h3 className="font-bold text-lg text-white">Certified LLM Security Professional (CLLMSP)</h3>
+              <div className="flex items-center gap-4">
+                <span className="bg-emerald-500/10 text-emerald-400 px-3 py-1 font-mono text-sm rounded-full border border-emerald-500/20">2026</span>
+                <p className="text-slate-400 text-sm">Red Team Leaders</p>
+              </div>
+              <p className="text-slate-400 text-sm leading-relaxed mt-2">
+                Seguridad en LLMs, considerando riesgos como prompt injection, jailbreaks, el OWASP Top 10 para LLM y los aspectos de gobernanza en IA.
               </p>
             </div>
           </div>
