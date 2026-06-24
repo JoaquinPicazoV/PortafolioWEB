@@ -104,5 +104,45 @@ export const socWriteupsData = [
         severidad: 'Alta',
         plataforma: 'LetsDefend',
         pdf: "/writeups/LetsDefend/Evento 82 - Phishing.pdf"
+    },
+    {
+        imagen: SOC_PHISHING,
+        titulo: 'Evento 225',
+        tipo: 'VPN Connection',
+        severidad: 'Media',
+        plataforma: 'LetsDefend',
+        pdf: "/writeups/LetsDefend/Evento 225 - VPN Connection.pdf"
+    },
+    {
+        imagen: SOC_PHISHING,
+        titulo: 'Evento 44',
+        tipo: 'Suspicious hh.exe',
+        severidad: 'Alta',
+        plataforma: 'LetsDefend',
+        pdf: "/writeups/LetsDefend/Evento 44 - Suspicious hh.exe.pdf"
+    },
+    {
+        imagen: SOC_PHISHING,
+        titulo: 'Evento 59',
+        tipo: 'Phishing',
+        severidad: 'Alta',
+        plataforma: 'LetsDefend',
+        pdf: "/writeups/LetsDefend/Evento 59 - Phishing.pdf"
+    },
+    {
+        imagen: SOC_PHISHING,
+        titulo: 'Evento 8',
+        tipo: 'Phishing',
+        severidad: 'Alta',
+        plataforma: 'LetsDefend',
+        pdf: "/writeups/LetsDefend/Evento 8 - Phishing.pdf"
+    },
+    {
+        imagen: SOC_PHISHING,
+        titulo: 'Evento 92',
+        tipo: 'Ransomware',
+        severidad: 'Crítica',
+        plataforma: 'LetsDefend',
+        pdf: "/writeups/LetsDefend/Evento 92 - Ransomware.pdf"
     }
 ];
