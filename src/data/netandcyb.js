@@ -20,7 +20,7 @@ export const cybProjects = [
 
     {
         title: "Simulaciones SOC",
-        subtitle: "Análisis de alertas de ciberseguridad en un SOC simulado, investigación de logs y contención de ataques desde rol de un analista defensivo.",
+        subtitle: "Análisis de alertas de ciberseguridad en un SOC simulado, investigación de logs y contención de ataques desde rol de un analista defensivo (SOC L1).",
         internalUrl: "/soc-writeups",
         languages: [
             { name: "AbuseIPDB", logo: ABUSEIPDB },
@@ -77,4 +77,9 @@ export const cybProjects = [
             { name: "Python", logo: PYTHON },
         ]
     },
+    {
+        title: "Alineación estratégica: Ley 21.663 e ISO 27001",
+        subtitle: "Proyecto que alinea la norma ISO 27001 con la Ley 21.663, simplificando el cumplimiento normativo y la gestión de incidentes sin duplicar esfuerzos operativos.",
+        url: "/Proyectos/Alineacion_ISO27001_Ley21663.pdf"
+    }
 ];

@@ -50,10 +50,18 @@ function SocWriteups() {
 
                   <div className="space-y-2 mb-4">
                     <div className="flex justify-between items-center bg-white/5 p-2 rounded-lg">
-                      <span className="text-xs text-slate-400 font-medium">Dificultad</span>
-                      <span className={`text-xs px-2 py-1 font-mono font-bold border ${simulacion.dificultad === 'Fácil' || simulacion.dificultad === 'Muy fácil' ? 'bg-emerald-500/10 text-emerald-400 border-emerald-500/20' :
-                        simulacion.dificultad === 'Media' ? 'bg-yellow-500/10 text-yellow-500 border-yellow-500/20' : 'bg-red-500/10 text-red-500 border-red-500/20'
-                        }`}>{simulacion.dificultad}</span>
+                      <span className="text-xs text-slate-400 font-medium">Tipo</span>
+                      <span className="text-xs px-2 py-1 font-mono font-bold text-blue-400 bg-blue-500/10 border border-blue-500/20">
+                        {simulacion.tipo}
+                      </span>
+                    </div>
+                    <div className="flex justify-between items-center bg-white/5 p-2 border-t border-white/10">
+                      <span className="text-xs text-slate-400 font-medium">Severidad</span>
+                      <span className={`text-xs px-2 py-1 font-mono font-bold border ${simulacion.severidad?.toLowerCase() === 'baja' ? 'bg-emerald-500/10 text-emerald-400 border-emerald-500/20' :
+                        simulacion.severidad?.toLowerCase() === 'media' || simulacion.severidad?.toLowerCase() === 'medio' ? 'bg-yellow-500/10 text-yellow-500 border-yellow-500/20' : 
+                        simulacion.severidad?.toLowerCase() === 'alta' ? 'bg-orange-500/10 text-orange-500 border-orange-500/20' :
+                        simulacion.severidad?.toLowerCase() === 'crítica' || simulacion.severidad?.toLowerCase() === 'critica' ? 'bg-red-500/10 text-red-500 border-red-500/20' : 'bg-slate-500/10 text-slate-400 border-slate-500/20'
+                        }`}>{simulacion.severidad}</span>
                     </div>
                     <div className="flex justify-between items-center bg-white/5 p-2 border-t border-white/10">
                       <span className="text-xs text-slate-400 font-mono">PLATAFORMA</span>
